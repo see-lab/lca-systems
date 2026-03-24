@@ -19,13 +19,14 @@ st.markdown("**Date:** March 24, 2024")
 st.space(size="small")
 
 # Short description block
-st.header("Problem Set Up", divider=True)
+st.header("Overview", divider=True)
 
 # Add columns
 col1, col2 = st.columns([2,1])
 
 # Text description
 with col1:
+    st.markdown("### Problem Set Up")
     st.markdown('''This module focuses on the life cycle assessment of residential 
                 storage systems, particularly for resilient heating solutions.
                 The goal is to compare two alternative storage technologies: (1) a battery-based (Li-ion) system and 
@@ -35,7 +36,7 @@ with col1:
     st.markdown("- **Functional Unit:** 200 kWh of energy storage for residential heating over a 3-day outage and a 15-year lifetime.")
     st.markdown("- **System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
     st.markdown("- **Impact Units:** Several options (see drop down below).")
-    st.markdown("## Learning Objectives")
+    st.markdown("### Learning Objectives")
     st.markdown("The analysis will consider the environmental impacts associated with each system under various impact scenarios to understand:")
     st.markdown("- Which system has the lowest environmental impact under different impact categories?")
     st.markdown("- What are the key drivers of impact for each system?")
