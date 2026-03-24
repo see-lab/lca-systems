@@ -32,7 +32,8 @@ with col1:
     st.markdown("- **Impact Units:** Several options (see drop down below).")
 
 with col2:
-    st.image("https://static.streamlit.io/examples/sea.jpg", caption="Image from Streamlit's example gallery. Replace with something relevant to the case study.")
+    st.header("System Boundaries")
+    st.image("https://static.streamlit.io/examples/dog.jpg", caption="Dog image.")
 
 # Main content
 st.space(size="small")
