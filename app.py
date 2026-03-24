@@ -9,17 +9,22 @@ from numpy.random import default_rng as rng # For random numbers (DEVELOPMENT ON
 
 # Configure page
 st.set_page_config(page_title="LCA Systems", layout="wide")
-# st.balloons()
+st.markdown("**Authors:** Kathryn Hinkelman, University of Vermont")
+st.markdown("**Date:** March 24, 2024")
+
 st.title("Life Cycle Assessment of Systems Module")
 st.header("A Case Study on Residentential Storage Systems for Resilient Heating", divider=True)
-st.write("Authors: Kathryn Hinkelman, University of Vermont")
-st.write("Date: March 24, 2024")
+
 
 st.space(size="small")
 
 # Short description block
-st.subheader("Overview")
-st.write("This module focuses on the life cycle assessment of residential storage systems, particularly for resilient heating solutions.")
+st.header("Problem Set Up", divider=True)
+st.markdown("This module focuses on the life cycle assessment of residential storage systems, particularly for resilient heating solutions.")
+st.markdown("**Goal:** Estimate biggest impacts to set design priorities.")
+st.markdown("**Functional Unit:** 200 kWh of energy storage for residential heating over a 3-day outage and a 15-year lifetime.")
+st.markdown("**System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
+st.markdown("**Impact Units:** Several options (see drop down below).")
 
 # Main content
 st.space(size="small")
@@ -46,5 +51,5 @@ col3.write(df)
 # st.warning(":building_construction: We are working on this page. Stay tuned.")
 
 # Acknowledgements
-st.subheader("Acknowledgements")
-st.write("This educational module This research was supported by the U.S. National Science Foundation under Grant CBET-2501735. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.")
+st.subheader("Acknowledgements", divider=True)
+st.write("The development of this educational module was supported by the U.S. National Science Foundation under Grant CBET-2501735. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.")
