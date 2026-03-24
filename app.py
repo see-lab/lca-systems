@@ -22,7 +22,7 @@ st.space(size="small")
 st.header("Problem Set Up", divider=True)
 
 # Add columns
-col1, col2 = st.columns([3,1])
+col1, col2 = st.columns([2,1])
 
 with col1:
     st.markdown('''This module focuses on the life cycle assessment of residential 
@@ -39,7 +39,7 @@ with col1:
 
 with col2:
     st.header("System Boundaries")
-    st.image("https://static.streamlit.io/examples/dog.jpg", caption="Dog image.")
+    st.image("img/placeholder.pdf", caption="System boundaries (a) and (b).")
 
 # Main content
 st.space(size="small")
