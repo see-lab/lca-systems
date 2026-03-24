@@ -27,7 +27,8 @@ col1, col2 = st.columns([2,1])
 with col1:
     st.markdown('''This module focuses on the life cycle assessment of residential 
                 storage systems, particularly for resilient heating solutions.
-                The goal is to compare two alternative storage technologies: (1) a battery-based (Li-ion) system and (2) a thermal storage system (phase change material).
+                The goal is to compare two alternative storage technologies: (1) a battery-based (Li-ion) system and 
+                (2) a thermal storage system (silica sand, i.e., a sand battery).
                 The analysis will consider the environmental impacts associated with each system under various impact scenarios to understand: 
                 - Which system has the lowest environmental impact under different impact categories?
                 - What are the key drivers of impact for each system?
