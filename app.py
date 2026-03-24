@@ -38,7 +38,6 @@ with col1:
     st.markdown("- **Impact Units:** Several options (see drop down below).")
 
 with col2:
-    st.header("System Boundaries")
     st.image("img/placeholder.png", caption="System boundaries (a) and (b).")
 
 # Main content
@@ -51,7 +50,7 @@ col1, col2, col3 = st.columns([1,2,1])
 
 # Column 1: Placeholder image (to be toggle buttons next)
 with col1:
-    st.header("A cat")
+    st.subheader("A cat")
     st.image("https://static.streamlit.io/examples/cat.jpg")
 
 # Random data for testing charts
