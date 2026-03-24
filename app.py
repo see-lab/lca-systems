@@ -39,7 +39,7 @@ with col1:
 
 with col2:
     st.header("System Boundaries")
-    st.image("img/placeholder.pdf", caption="System boundaries (a) and (b).")
+    st.image("/img/placeholder.pdf", caption="System boundaries (a) and (b).")
 
 # Main content
 st.space(size="small")
