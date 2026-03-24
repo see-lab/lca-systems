@@ -20,12 +20,12 @@ st.space(size="small")
 
 # Short description block
 st.header("Problem Set Up", divider=True)
-st.markdown("This module focuses on the life cycle assessment of residential storage systems, particularly for resilient heating solutions.")
 
 # Add columns
 col1, col2 = st.columns([3,1])
 
 with col1:
+    st.markdown("This module focuses on the life cycle assessment of residential storage systems, particularly for resilient heating solutions.")
     st.markdown("- **Goal:** Estimate biggest impacts to set design priorities.")
     st.markdown("- **Functional Unit:** 200 kWh of energy storage for residential heating over a 3-day outage and a 15-year lifetime.")
     st.markdown("- **System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
