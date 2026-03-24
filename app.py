@@ -18,7 +18,7 @@ st.header("A Case Study on Residentential Storage Systems for Resilient Heating"
 # st.warning(":building_construction: We are working on this page. Stay tuned.")
 
 # Add columns
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns([1,2,1])
 
 # Column 1: Placeholder image (to be toggle buttons next)
 with col1:
@@ -27,7 +27,6 @@ with col1:
 
 # Random data for testing charts
 df = rng(0).standard_normal((10, 1))
-col2, col3 = st.columns([3, 1])
 
 col2.subheader("A wide column with a chart")
 col2.line_chart(df)
