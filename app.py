@@ -9,11 +9,11 @@ from numpy.random import default_rng as rng # For random numbers (DEVELOPMENT ON
 
 # Configure page
 st.set_page_config(page_title="LCA Systems", layout="wide")
-st.markdown("**Authors:** Kathryn Hinkelman, University of Vermont")
-st.markdown("**Date:** March 24, 2024")
 
 st.title("Life Cycle Assessment of Systems Module")
-st.header("A Case Study on Residentential Storage Systems for Resilient Heating", divider=True)
+st.header("A Case Study on Residentential Storage Systems for Resilient Heating")
+st.markdown("**Authors:** Kathryn Hinkelman, University of Vermont")
+st.markdown("**Date:** March 24, 2024")
 
 
 st.space(size="small")
@@ -21,13 +21,15 @@ st.space(size="small")
 # Short description block
 st.header("Problem Set Up", divider=True)
 st.markdown("This module focuses on the life cycle assessment of residential storage systems, particularly for resilient heating solutions.")
-st.markdown("**Goal:** Estimate biggest impacts to set design priorities.")
-st.markdown("**Functional Unit:** 200 kWh of energy storage for residential heating over a 3-day outage and a 15-year lifetime.")
-st.markdown("**System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
-st.markdown("**Impact Units:** Several options (see drop down below).")
+st.markdown("- **Goal:** Estimate biggest impacts to set design priorities.")
+st.markdown("- **Functional Unit:** 200 kWh of energy storage for residential heating over a 3-day outage and a 15-year lifetime.")
+st.markdown("- **System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
+st.markdown("- **Impact Units:** Several options (see drop down below).")
 
 # Main content
 st.space(size="small")
+
+st.header("Impact Analysis Tool", divider=True)
 
 # Add columns
 col1, col2, col3 = st.columns([1,2,1])
