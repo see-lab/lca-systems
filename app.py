@@ -9,6 +9,8 @@ import streamlit as st
 st.set_page_config(page_title="LCA Systems", layout="wide")
 # st.balloons()
 st.title("Life Cycle Assessment of Systems Module")
+st.subtitle("A Case Study on Residentential Storage Systems for Resilient Heating")
+
 
 # Under construction
 st.warning(":building_construction: We are working on this page. Stay tuned.")
