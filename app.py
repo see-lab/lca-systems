@@ -4,6 +4,7 @@
 
 # Get packages
 import streamlit as st
+import pandas as pd 
 from numpy.random import default_rng as rng # For random numbers (DEVELOPMENT ONLY)
 
 
@@ -36,7 +37,7 @@ with col1:
                 (2) a thermal storage system (silica sand, i.e., a sand battery).
                 ''')
     st.markdown("- **Goal:** Estimate biggest impacts to set design priorities.")
-    st.markdown("- **Functional Unit:** 200 kWh of energy storage for residential heating over a 3-day outage and a 15-year lifetime.")
+    st.markdown("- **Functional Unit:** 200 kWh energy stored with a 15-year lifetime (3-day-long outages, 6 outages/year).")
     st.markdown("- **System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
     st.markdown("- **Impact Units:** Several options (see drop down below).")
     st.markdown("### Learning Objectives")
@@ -57,10 +58,13 @@ st.header("Impact Analysis Tool", divider=True)
 # Add columns
 col1, col2, col3 = st.columns([1,2,1])
 
-# Column 1: Placeholder image (to be toggle buttons next)
+# Column 1: Selection options
 with col1:
-    st.subheader("A cat")
-    st.image("https://static.streamlit.io/examples/cat.jpg")
+    st.subheader("Select Impact Category")
+    impact_category = st.selectbox("Choose an impact method:", 
+        ["Carbon Footprint (GWP100)", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
+
+st.write("Impact Method:", impact_category)
 
 # Random data for testing charts
 df = rng(0).standard_normal((10, 1))
@@ -74,4 +78,8 @@ col3.write(df)
 
 # Acknowledgements
 st.subheader("Acknowledgements", divider=True)
-st.write("The development of this educational module was supported by the U.S. National Science Foundation under grant CBET-2501735. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.")
+st.write('''The development of this educational module was supported by the U.S. 
+         National Science Foundation under Grant CBET-2501735. Any opinions, f
+         indings, and conclusions or recommendations expressed in this material 
+         are those of the authors and do not necessarily reflect the views of the 
+         National Science Foundation.''')
