@@ -60,11 +60,21 @@ col1, col2, col3 = st.columns([1,2,1])
 
 # Column 1: Selection options
 with col1:
-    st.subheader("Select Impact Category")
+    st.subheader("Select Analysis Options")
+
+    systems = st.multiselect(
+    "What system alternatives do you want to compare?",
+    ["Sand Battery", "Chemical Battery"],
+    default=["Sand Battery", "Chemical Battery"],
+    )
+
     impact_category = st.selectbox("Choose an impact method:", 
         ["Carbon Footprint (GWP100)", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
+    
+    st.write("System Alternatives:", systems)
+    st.write("Impact Method:", impact_category)
+    
 
-st.write("Impact Method:", impact_category)
 
 # Random data for testing charts
 df = rng(0).standard_normal((10, 1))
