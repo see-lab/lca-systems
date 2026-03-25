@@ -90,7 +90,7 @@ df = pd.read_csv(PATH)
 # df = df[df["System"].isin(systems)]
 
 col2.subheader("A wide column with the charts")
-col2.line_chart(df.set_index("System"))
+col2.line_chart(df)
 
 col3.subheader("A narrow column with the data")
 col.write(df)
