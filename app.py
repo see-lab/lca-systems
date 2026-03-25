@@ -90,10 +90,12 @@ elif impact_category == "ReCiPe Endpoint H":
     PATH = "./data/ReCiPe_End.csv"
 df = pd.read_csv(PATH)
 
-# Display the DataFrame in your Streamlit app
-st.write(df) # or st.dataframe(df)
-# col2.subheader("A wide column with a chart")
-# col2.line_chart(df)
+# Display data based on selected system(s)
+if "Sand Battery" in systems:
+    col2.write(df[df["System"] == "Sand Battery"])
+if "Chemical Battery" in systems:
+    col2.write(df[df["System"] == "Chemical Battery"])
+
 
 col3.subheader("A narrow column with the data")
 col3.write(df)
