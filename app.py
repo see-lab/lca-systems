@@ -71,6 +71,8 @@ with col1:
     impact_category = st.selectbox("Choose an impact method:", 
         ["Carbon Footprint (GWP100)", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
     
+    st.divider()
+    st.subheader("Selected Options")
     st.write("System Alternatives:", systems)
     st.write("Impact Method:", impact_category)
     
@@ -79,8 +81,19 @@ with col1:
 # Random data for testing charts
 df = rng(0).standard_normal((10, 1))
 
-col2.subheader("A wide column with a chart")
-col2.line_chart(df)
+# Read the data frame depending on the selected impact category
+if impact_category == "Carbon Footprint (GWP100)":
+    PATH = "./data/GWP100.csv"
+elif impact_category == "ReCiPe Midpoint H":
+    PATH = "./data/ReCiPe_Mid.csv"
+elif impact_category == "ReCiPe Endpoint H":
+    PATH = "./data/ReCiPe_End.csv"
+df = pd.read_csv(PATH)
+
+# Display the DataFrame in your Streamlit app
+st.write(df) # or st.dataframe(df)
+# col2.subheader("A wide column with a chart")
+# col2.line_chart(df)
 
 col3.subheader("A narrow column with the data")
 col3.write(df)
