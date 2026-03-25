@@ -93,7 +93,7 @@ col2.subheader("A wide column with the charts")
 col2.line_chart(df)
 
 col3.subheader("A narrow column with the data")
-col.write(df)
+col3.write(df)
 
 
 # Acknowledgements
