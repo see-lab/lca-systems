@@ -20,8 +20,6 @@ st.markdown("**Date:** March 24, 2024")
 st.warning(":building_construction: We are working on this page. Stay tuned.")
 
 
-st.space(size="small")
-
 # Short description block
 st.header("Overview", divider=True)
 
@@ -51,8 +49,6 @@ with col2:
     st.image("img/placeholder.png", caption="System boundaries (a) and (b).")
 
 # Main content
-st.space(size="small")
-
 st.header("Impact Analysis Tool", divider=True)
 
 # Add columns
@@ -90,11 +86,9 @@ elif impact_category == "ReCiPe Endpoint H":
     PATH = "./data/ReCiPe_End.csv"
 df = pd.read_csv(PATH)
 
-# Display data based on selected system(s)
-if "Sand Battery" in systems:
-    col2.write(df[df["System"] == "Sand Battery"])
-if "Chemical Battery" in systems:
-    col2.write(df[df["System"] == "Chemical Battery"])
+# Display data based on selected system(s). Get the system from the first column of the data frame and filter based on the selected systems.
+df = df[df["System"].isin(systems)]
+
 
 
 col3.subheader("A narrow column with the data")

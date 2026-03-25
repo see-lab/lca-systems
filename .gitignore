@@ -1,2 +1,4 @@
 # Folders to ignore
-__pycache__/ß
+__pycache__/
+.venv/
+venv/
