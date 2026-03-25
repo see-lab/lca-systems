@@ -11,9 +11,12 @@ from numpy.random import default_rng as rng # For random numbers (DEVELOPMENT ON
 st.set_page_config(page_title="LCA Systems", layout="wide")
 
 st.title("Life Cycle Assessment of Systems Module")
-st.header("A Case Study on Residentential Storage Systems for Resilient Heating")
-st.markdown("**Authors:** Kathryn Hinkelman, University of Vermont")
+st.header("A Case Study on Residential Storage Systems for Resilient Heating")
+st.markdown("**Authors:** Kathryn Hinkelman & Anastasija Mensikova, University of Vermont")
 st.markdown("**Date:** March 24, 2024")
+
+# Under construction
+st.warning(":building_construction: We are working on this page. Stay tuned.")
 
 
 st.space(size="small")
@@ -68,10 +71,7 @@ col2.line_chart(df)
 col3.subheader("A narrow column with the data")
 col3.write(df)
 
-#### NOT USED
-# Under construction
-# st.warning(":building_construction: We are working on this page. Stay tuned.")
 
 # Acknowledgements
 st.subheader("Acknowledgements", divider=True)
-st.write("The development of this educational module was supported by the U.S. National Science Foundation under Grant CBET-2501735. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.")
+st.write("The development of this educational module was supported by the U.S. National Science Foundation under grant CBET-2501735. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.")
