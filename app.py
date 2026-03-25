@@ -87,12 +87,13 @@ elif impact_category == "ReCiPe Endpoint H":
 df = pd.read_csv(PATH)
 
 # Display data based on selected system(s). Get the system from the first column of the data frame and filter based on the selected systems.
-df = df[df["System"].isin(systems)]
+# df = df[df["System"].isin(systems)]
 
-
+col2.subheader("A wide column with the charts")
+col2.line_chart(df.set_index("System"))
 
 col3.subheader("A narrow column with the data")
-col3.write(df)
+col.write(df)
 
 
 # Acknowledgements
