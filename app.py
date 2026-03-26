@@ -37,7 +37,7 @@ with tab1:
             ["Carbon Footprint", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
 
         impact_location = st.selectbox("Choose a location:", 
-            ["Vermont", "Colorado", "California"])
+            ["Vermont", "Colorado", "California", "Wild Card"])
 
         st.warning(":building_construction: Add Weighting Factors.")
 
