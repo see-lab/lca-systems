@@ -97,10 +97,11 @@ with tab2:
         st.markdown("- **Functional Unit:** 200 kWh energy stored with a 15-year lifetime (3-day-long outages, 6 outages/year).")
         st.markdown("- **System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
         st.markdown("- **Impact Units:** Several options (see drop down below).")
-        st.markdown("### Learning Objectives")
-        st.markdown("The analysis will consider the environmental impacts associated with each system under various impact scenarios to understand:")
-        st.markdown("- Which system has the lowest environmental impact under different impact categories?")
-        st.markdown("- What are the key drivers of impact for each system?")
+        st.markdown("### Questions to Consider")
+        st.markdown("This tool analyzes the environmental impacts from each system under various impact scenarios and locations to understand:")
+        st.markdown("- How does environmental impact methods change the perception of each alternate's performance?")
+        st.markdown("- What are the key impact drivers for each system?")
+        st.markdown("- How do the results vary across different locations (e.g., due to differences in electricity grid mix)?")
         st.markdown("- How do the results inform design priorities for improving the sustainability of these systems?")
 
     # System boundary image
