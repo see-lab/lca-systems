@@ -1,5 +1,3 @@
-﻿Phase,Sand Battery,Chemical Battery
-Materials & Mfg,1149.10191,8348.108498
-Transport,54.86070488,65.92488914
-Use,1.533857692,0
-End-of-Life,19.41790561,72.83200059
+﻿System,Materials & Mfg,Transport,Use,End-of-Life
+Sand Battery,1149.10191,54.86070488,1.533857692,19.41790561
+Chemical Battery,8348.108498,65.92488914,0,72.83200059

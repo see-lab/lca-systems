@@ -6,7 +6,7 @@
 import streamlit as st
 import pandas as pd 
 from numpy.random import default_rng as rng # For random numbers (DEVELOPMENT ONLY)
-
+import plotly.express as px
 
 # Configure page
 st.set_page_config(page_title="LCA Systems", layout="wide")
@@ -46,54 +46,61 @@ with col1:
 
 # System boundary image
 with col2:
-    st.image("img/placeholder.png", caption="System boundaries (a) and (b).")
+    # st.image("img/placeholder.png", caption="System boundaries (a) and (b).")
+    # Add cat image
+    st.image("https://static.streamlit.io/examples/dog.jpg")
 
 # Main content
 st.header("Impact Analysis Tool", divider=True)
 
 # Add columns
-col1, col2, col3 = st.columns([1,2,1])
+col1, col2 = st.columns([1,4])
 
 # Column 1: Selection options
 with col1:
     st.subheader("Select Analysis Options")
 
-    systems = st.multiselect(
-    "What system alternatives do you want to compare?",
-    ["Sand Battery", "Chemical Battery"],
-    default=["Sand Battery", "Chemical Battery"],
-    )
-
     impact_category = st.selectbox("Choose an impact method:", 
         ["Carbon Footprint (GWP100)", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
     
+    st.warning(":building_construction: Add Weighting Factors.")
+
+
     st.divider()
     st.subheader("Selected Options")
-    st.write("System Alternatives:", systems)
     st.write("Impact Method:", impact_category)
     
 
-
-# Random data for testing charts
-df = rng(0).standard_normal((10, 1))
-
-# Read the data frame depending on the selected impact category
-if impact_category == "Carbon Footprint (GWP100)":
-    PATH = "./data/GWP100.csv"
-elif impact_category == "ReCiPe Midpoint H":
-    PATH = "./data/ReCiPe_Mid.csv"
-elif impact_category == "ReCiPe Endpoint H":
-    PATH = "./data/ReCiPe_End.csv"
+# Save the path based on impact category selected.
+PATH = f"./data/GWP100.csv" # MODIFY
 df = pd.read_csv(PATH)
+
+# Plot the charts
+phases = ["Materials & Mfg", "Transport", "Use", "End-of-Life"]
+units = "kg CO2e" if impact_category == "Carbon Footprint (GWP100)" else "Points"
+col2.subheader(f"{impact_category}")
+
+# Plotly chart
+fig = px.bar(df, x='System', y=phases)
+fig.update_layout(yaxis_title=units, legend_title=None)
+fig.update_layout(
+    font=dict(
+        family="Arial",
+        size=26, 
+        color="black"
+    )
+)
+col2.plotly_chart(fig)
+# col2.bar_chart(df, x="System", y=phases, horizontal=False)
 
 # Display data based on selected system(s). Get the system from the first column of the data frame and filter based on the selected systems.
 # df = df[df["System"].isin(systems)]
 
-col2.subheader("A wide column with the charts")
-col2.line_chart(df)
+# col2.subheader("A wide column with the charts")
+# col2.line_chart(df)
 
-col3.subheader("A narrow column with the data")
-col3.write(df)
+# col3.subheader("A narrow column with the data")
+# col3.write(df)
 
 
 # Acknowledgements
