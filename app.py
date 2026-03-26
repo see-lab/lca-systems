@@ -20,7 +20,7 @@ st.markdown("**Version 0.1 pre-alpha:** March 25, 2026")
 st.warning(":building_construction: We are working on this page. Stay tuned.")
 
 ################## Define two tabs ####################
-tab1, tab2 = st.tabs(["Analysis Tool", "Supporting Details"])
+tab1, tab2, tab3 = st.tabs(["Analysis Tool", "Supporting Details", "Inventory Data"])
 
 with tab1:
     # Main content
@@ -118,3 +118,7 @@ with tab2:
             are those of the authors and do not necessarily reflect the views of the 
             National Science Foundation.''')
 
+
+with tab3:
+    st.header("Inventory Data", divider=True)
+    st.warning(":building_construction: We are working on this page. Stay tuned.")
