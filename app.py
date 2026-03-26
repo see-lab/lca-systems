@@ -14,7 +14,7 @@ st.set_page_config(page_title="LCA Systems", layout="wide")
 st.title("Life Cycle Assessment of Systems Module")
 st.header("A Case Study on Residential Storage Systems for Resilient Heating")
 st.markdown("**Authors:** Kathryn Hinkelman & Anastasija Mensikova, University of Vermont")
-st.markdown("**Date:** March 24, 2024")
+st.markdown("**Version 0.1 pre-alpha:** March 25, 2026")
 
 # Under construction
 st.warning(":building_construction: We are working on this page. Stay tuned.")
