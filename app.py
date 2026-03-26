@@ -62,14 +62,17 @@ with col1:
 
     impact_category = st.selectbox("Choose an impact method:", 
         ["Carbon Footprint (GWP100)", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
-    
+
+    impact_location = st.selectbox("Choose a location:", 
+        ["Vermont", "Colorado", "California"])
+
     st.warning(":building_construction: Add Weighting Factors.")
 
 
     st.divider()
     st.subheader("Selected Options")
     st.write("Impact Method:", impact_category)
-    
+    st.write("Location:", impact_location)
 
 # Save the path based on impact category selected.
 PATH = f"./data/GWP100.csv" # MODIFY
