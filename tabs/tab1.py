@@ -21,7 +21,8 @@ def show():
             ["Carbon Footprint", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
 
         outage_frequency = st.selectbox("Choose an outage frequency:", 
-            ["Rare (5x/year)", "Moderate outages (10x/yr)", "Frequent outages (20x/yr)"])
+            ["Rare (5x/year)", "Moderate outages (10x/yr)", "Frequent outages (20x/yr)"],
+            index=1)
 
         st.warning(":building_construction: Add Weighting Factors.")
 
@@ -40,7 +41,15 @@ def show():
     units = "kg CO2e" if impact_category == "Carbon Footprint" else "Points"
     col2.subheader(f"{impact_category}")
 
-    # Plotly chart (one type for midpoints; one for endpoints)
+    # Reduce df based on outage scenario selected
+    if outage_frequency == "Rare (5x/year)":
+        df = df[df['Outage'] == 'Rare']
+    elif outage_frequency == "Moderate outages (10x/yr)":
+        df = df[df['Outage'] == 'Moderate']
+    else:        
+        df = df[df['Outage'] == 'Frequent']
+    
+    # Plotly charts (one type for midpoints; one for endpoints)
     if impact_category == "ReCiPe Midpoint H":
         fig1 = px.bar(df, x='Midpoint', y=phases, color='System', 
                       barmode='group', orientation='v',
