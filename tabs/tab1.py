@@ -61,6 +61,9 @@ def show():
         fig3 = px.bar(df[df['System'] == 'BESS'], 
                       x='Midpoint', y=phases,
                       title="BESS Breakdown")
+        fig4 = px.bar(df[df['System'] == 'Propane'], 
+                      x='Midpoint', y=phases,
+                      title="Propane Breakdown")
         # Update layout for both charts
         fig1.update_layout(yaxis_title=units, legend_title=None)
         fig1.update_layout(font=dict(family="Arial", size=26, color="black"))
@@ -68,11 +71,14 @@ def show():
         fig2.update_layout(font=dict(family="Arial", size=26, color="black"))
         fig3.update_layout(yaxis_title=units, legend_title=None)
         fig3.update_layout(font=dict(family="Arial", size=26, color="black"))
+        fig4.update_layout(yaxis_title=units, legend_title=None)
+        fig4.update_layout(font=dict(family="Arial", size=26, color="black"))
 
         # Display vertically
         col2.plotly_chart(fig1)
         col2.plotly_chart(fig2)
         col2.plotly_chart(fig3)
+        col2.plotly_chart(fig4)
     else:
         fig = px.bar(df, x='System', y=phases,
                      title="Comparison of Systems (Single Score)")
