@@ -1,18 +1,35 @@
-﻿System,Midpoint,Materials & Mfg,Transport,Use,End-of-Life
-Sand Battery,Global warming,307.0408706,38.38867981,5.198070658,0.454185184
-Sand Battery,Ozone depletion,0.022454644,0.005428369,0.001475375,4.7616E-05
-Sand Battery,Ionizing radiation,0.001342439,0.012087395,5.99623E-07,1.24624E-06
-Sand Battery,Ozone formation,1.264819787,0.179044406,0.022019176,0.002469849
-Sand Battery,Particulate matter formation,229.5370913,129.0583627,2.415565826,0.131296894
-Sand Battery,Terrestrial acidifcation,4.124088853,2.41313799,0.045091705,0.002525087
-Sand Battery,Freshwater eutrophication,0.00735771,0.000778338,0.000427832,5.13042E-06
-Sand Battery,Marine eutrophication,-0.000301998,3.18408E-06,3.15899E-06,1.65252E-07
-Sand Battery,Terrestrial ecotoxicity,0.019831581,0.03924462,0.003004477,6.17587E-06
-Sand Battery,Freshwater ecotoxicity,-0.000457997,0.001728952,3.86041E-05,2.8404E-07
-Sand Battery,Marine ecotoxicity,0.000193347,0.000564966,2.68878E-05,5.27857E-07
-Sand Battery,Human toxicity (cancer),0.496038564,0.21245717,0.031700684,0.00018587
-Sand Battery,Human toxicity (non-cancer),0.593772569,8.976164011,0.303603824,0.011179358
-Sand Battery,Land use,0.022224132,0,7.42998E-06,0.005167995
-Sand Battery,Mineral resources,0.14073325,0.825706216,0.076194377,3.99365E-05
-Sand Battery,Fossil resources,12.46720112,0.937724563,0.107226116,0.026508867
-Sand Battery,Water use,0.009687053,0,0.114718623,0.000342737
+﻿System,Outage,Midpoint,Materials & Mfg,Transport,Use,End-of-Life
+Sand Battery,Moderate,Global warming,307.9551222,38.38867981,8.66276453,0.454185184
+Sand Battery,Moderate,Ozone depletion,0.022485527,0.005428369,0.002458799,4.7616E-05
+Sand Battery,Moderate,Ionizing radiation,0.001345085,0.012087395,9.37141E-07,1.24624E-06
+Sand Battery,Moderate,Ozone formation,1.268626329,0.179044406,0.036694554,0.002469849
+Sand Battery,Moderate,Particulate matter formation,233.5966985,129.0583627,4.025677955,0.131296894
+Sand Battery,Moderate,Terrestrial acidifcation,4.200661507,2.41313799,0.075148033,0.002525087
+Sand Battery,Moderate,Freshwater eutrophication,0.007372168,0.000778338,0.000712142,5.13042E-06
+Sand Battery,Moderate,Marine eutrophication,-0.000301897,3.18408E-06,5.26361E-06,1.65252E-07
+Sand Battery,Moderate,Terrestrial ecotoxicity,0.019861365,0.03924462,0.005007451,6.17587E-06
+Sand Battery,Moderate,Freshwater ecotoxicity,-0.000457436,0.001728952,6.43384E-05,2.8404E-07
+Sand Battery,Moderate,Marine ecotoxicity,0.000193659,0.000564966,4.48125E-05,5.27857E-07
+Sand Battery,Moderate,Human toxicity (cancer),0.497746825,0.21245717,0.052826565,0.00018587
+Sand Battery,Moderate,Human toxicity (non-cancer),0.595203225,8.976164011,0.506005654,0.011179358
+Sand Battery,Moderate,Land use,0.022280599,0,1.23833E-05,0.005167995
+Sand Battery,Moderate,Mineral resources,0.148440853,0.825706216,0.126990588,3.99365E-05
+Sand Battery,Moderate,Fossil resources,12.5184354,0.937724563,0.178701803,0.026508867
+Sand Battery,Moderate,Water use,0.009698288,0,0.191197705,0.000342737
+BESS,Moderate,Global warming,296.5757935,131.3795834,0,1.703541889
+BESS,Moderate,Ozone depletion,0.017041645,0.009095831,0,0.000178596
+BESS,Moderate,Ionizing radiation,0.001041392,0.002356597,0,4.67437E-06
+BESS,Moderate,Ozone formation,1.265850465,0.361696939,0,0.009263822
+BESS,Moderate,Particulate matter formation,894.4054019,32.53492695,0,0.492463794
+BESS,Moderate,Terrestrial acidifcation,16.79500314,0.581906703,0,0.009471009
+BESS,Moderate,Freshwater eutrophication,0.004430882,0.000371918,0,1.9243E-05
+BESS,Moderate,Marine eutrophication,2.60947E-05,4.72681E-06,0,6.19821E-07
+BESS,Moderate,Terrestrial ecotoxicity,0.015365703,0.004912472,0,2.31642E-05
+BESS,Moderate,Freshwater ecotoxicity,0.000210851,0.00022182,0,1.06537E-06
+BESS,Moderate,Marine ecotoxicity,0.000201957,9.08945E-05,0,1.97987E-06
+BESS,Moderate,Human toxicity (cancer),0.510903438,0.144025375,0,0.000697155
+BESS,Moderate,Human toxicity (non-cancer),0.823748903,1.286924137,0,0.041931143
+BESS,Moderate,Land use,0.020724324,0.11758851,0,0.019383933
+BESS,Moderate,Mineral resources,1.689006345,0.094022321,0,0.000149793
+BESS,Moderate,Fossil resources,15.05774323,5.629245549,0,0.099428531
+BESS,Moderate,Water use,0.035413849,0.007178324,0,0.001285525

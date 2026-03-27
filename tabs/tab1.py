@@ -4,6 +4,7 @@
 import streamlit as st
 import pandas as pd 
 import plotly.express as px
+from plotly.subplots import make_subplots as sp
 
 def show():
     # Main content
@@ -19,8 +20,8 @@ def show():
         impact_category = st.selectbox("Choose an impact method:", 
             ["Carbon Footprint", "ReCiPe Midpoint H", "ReCiPe Endpoint H"])
 
-        impact_location = st.selectbox("Choose a location:", 
-            ["Vermont", "Colorado", "California", "Wild Card"])
+        outage_frequency = st.selectbox("Choose an outage frequency:", 
+            ["Rare (5x/year)", "Moderate outages (10x/yr)", "Frequent outages (20x/yr)"])
 
         st.warning(":building_construction: Add Weighting Factors.")
 
@@ -41,31 +42,38 @@ def show():
 
     # Plotly chart (one type for midpoints; one for endpoints)
     if impact_category == "ReCiPe Midpoint H":
-        fig = px.bar(df, x='Midpoint', y=phases)
+        fig1 = px.bar(df, x='Midpoint', y=phases, color='System', 
+                      barmode='group', orientation='v',
+                      title="Comparison of Systems")
+        # fig = px.bar(df, y='Midpoint', x=phases, color='System', barmode='group', orientation='h')
+        fig2 = px.bar(df[df['System'] == 'Sand Battery'], 
+                      x='Midpoint', y=phases,
+                      title="Sand Battery Breakdown")
+        fig3 = px.bar(df[df['System'] == 'BESS'], 
+                      x='Midpoint', y=phases,
+                      title="BESS Breakdown")
+        # Update layout for both charts
+        fig1.update_layout(yaxis_title=units, legend_title=None)
+        fig1.update_layout(font=dict(family="Arial", size=26, color="black"))
+        fig2.update_layout(yaxis_title=units, legend_title=None)
+        fig2.update_layout(font=dict(family="Arial", size=26, color="black"))
+        fig3.update_layout(yaxis_title=units, legend_title=None)
+        fig3.update_layout(font=dict(family="Arial", size=26, color="black"))
+
+        # Display vertically
+        col2.plotly_chart(fig1)
+        col2.plotly_chart(fig2)
+        col2.plotly_chart(fig3)
     else:
-        fig = px.bar(df, x='System', y=phases)
+        fig = px.bar(df, x='System', y=phases,
+                     title="Comparison of Systems (Single Score)")
         fig.update_layout(yaxis_title=units, legend_title=None)
-        fig.update_layout(
-            font=dict(
-                family="Arial",
-                size=26, 
-                color="black"
-            )
-        )
-
-    col2.plotly_chart(fig)
-    # col2.bar_chart(df, x="System", y=phases, horizontal=False)
-
-    # Display data based on selected system(s). Get the system from the first column of the data frame and filter based on the selected systems.
-    # df = df[df["System"].isin(systems)]
-
-    # col2.subheader("A wide column with the charts")
-    # col2.line_chart(df)
-
-    # col3.subheader("A narrow column with the data")
-    # col3.write(df)
+        fig.update_layout(font=dict(family="Arial", size=26, color="black"))
+        
+        # Display chart
+        col2.plotly_chart(fig)
 
     st.divider()
     st.subheader("Selected Options")
     st.write("Impact Method:", impact_category)
-    st.write("Location:", impact_location)
+    st.write("Outage Frequency:", outage_frequency)

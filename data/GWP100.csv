@@ -1,3 +1,4 @@
-﻿System,Materials & Mfg,Transport,Use,End-of-Life
-Sand Battery,1149.10191,54.86070488,1.533857692,19.41790561
-Chemical Battery,8348.108498,65.92488914,0,72.83200059
+﻿System,Outage,Materials & Mfg,Transport,Use,End-of-Life
+Sand Battery,Moderate,1149.10191,54.86070488,2.518680126,19.41790561
+BESS,Moderate,8348.108498,65.92488914,0,72.83200059
+Propane,Moderate,1791.457468,21.68513602,6843.748421,38.64418715
