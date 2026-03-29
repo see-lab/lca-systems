@@ -1,0 +1,199 @@
+﻿System,Outage,Midpoint,Unit,Materials & Mfg,Transport,Use,End-of-Life
+Sand Battery,Moderate,"Global warming, Human health",Pt,27.974114,1.5943854,0.16760218,0.011351037
+Sand Battery,Moderate,"Global warming, Terrestrial ecosystems",Pt,1.3686366,0.078004288,0.00819878,0.000555327
+Sand Battery,Moderate,"Global warming, Freshwater ecosystems",Pt,3.74E-05,2.13E-06,2.24E-07,1.52E-08
+Sand Battery,Moderate,Stratospheric ozone depletion,Pt,0.004577579,0.000144305,0.000107029,2.29E-06
+Sand Battery,Moderate,Ionizing radiation,Pt,0.015925951,0.000154384,0.000259286,5.31E-07
+Sand Battery,Moderate,"Ozone formation, Human health",Pt,0.071553284,0.009731562,0.00042581,0.000115441
+Sand Battery,Moderate,Fine particulate matter formation,Pt,59.125008,1.5094515,0.34946417,0.017952254
+Sand Battery,Moderate,"Ozone formation, Terrestrial ecosystems",Pt,0.16996532,0.023203589,0.001034731,0.000272343
+Sand Battery,Moderate,Terrestrial acidification,Pt,0.78604031,0.018262933,0.004514359,0.000191306
+Sand Battery,Moderate,Freshwater eutrophication,Pt,0.25758913,0.002028968,0.00163277,8.33E-06
+Sand Battery,Moderate,Marine eutrophication,Pt,0.000147266,5.66E-07,1.55E-07,2.97E-09
+Sand Battery,Moderate,Terrestrial ecotoxicity,Pt,0.70904189,0.009056366,0.002038544,1.96E-05
+Sand Battery,Moderate,Freshwater ecotoxicity,Pt,0.10360187,0.000481013,0.003892079,9.12E-07
+Sand Battery,Moderate,Marine ecotoxicity,Pt,0.026867956,0.000158175,0.000733123,3.82E-07
+Sand Battery,Moderate,Human carcinogenic toxicity,Pt,181.17661,0.99538465,1.6473341,0.005476614
+Sand Battery,Moderate,Human non-carcinogenic toxicity,Pt,34.193647,0.31874337,0.31946494,0.000359435
+Sand Battery,Moderate,Land use,Pt,0.27940547,0.018124343,0.020716992,-0.000606827
+Sand Battery,Moderate,Mineral resource scarcity,Pt,0.16860774,0.0004159,0.00084148,1.87E-06
+Sand Battery,Moderate,Fossil resource scarcity,Pt,0.70733453,0.10065438,0.004417214,0.000643112
+Sand Battery,Moderate,"Water consumption, Human health",Pt,0.76816784,0.005018399,0.001784612,1.15E-05
+Sand Battery,Moderate,"Water consumption, Terrestrial ecosystem",Pt,0.078350666,0.00056508,0.001287805,1.45E-06
+Sand Battery,Moderate,"Water consumption, Aquatic ecosystems",Pt,6.07E-06,6.46E-08,1.96E-08,2.44E-10
+BESS,Moderate,"Global warming, Human health",Pt,230.20927,4.8677974,0,5.84E-02
+BESS,Moderate,"Global warming, Terrestrial ecosystems",Pt,11.262785,0.23814749,0,2.85E-03
+BESS,Moderate,"Global warming, Freshwater ecosystems",Pt,3.08E-04,6.50E-06,0,7.80E-08
+BESS,Moderate,Stratospheric ozone depletion,Pt,6.36E-02,8.46E-04,0,1.18E-05
+BESS,Moderate,Ionizing radiation,Pt,0.26112239,3.49E-04,0,2.73E-06
+BESS,Moderate,"Ozone formation, Human health",Pt,0.6582009,5.74E-02,0,5.93E-04
+BESS,Moderate,Fine particulate matter formation,Pt,631.27332,11.395657,0,9.23E-02
+BESS,Moderate,"Ozone formation, Terrestrial ecosystems",Pt,1.5746426,0.13446124,0,1.40E-03
+BESS,Moderate,Terrestrial acidification,Pt,9.6445613,0.18145091,0,9.83E-04
+BESS,Moderate,Freshwater eutrophication,Pt,2.755372,4.51E-03,0,4.28E-05
+BESS,Moderate,Marine eutrophication,Pt,1.01E-03,1.50E-06,0,1.52E-08
+BESS,Moderate,Terrestrial ecotoxicity,Pt,1.9716641,1.96E-02,0,1.01E-04
+BESS,Moderate,Freshwater ecotoxicity,Pt,1.3695908,1.06E-03,0,4.69E-06
+BESS,Moderate,Marine ecotoxicity,Pt,0.27080703,3.58E-04,0,1.96E-06
+BESS,Moderate,Human carcinogenic toxicity,Pt,251.60629,2.8823204,0,2.82E-02
+BESS,Moderate,Human non-carcinogenic toxicity,Pt,497.48423,0.60241806,0,1.85E-03
+BESS,Moderate,Land use,Pt,1.7189051,3.25E-02,0,-3.12E-03
+BESS,Moderate,Mineral resource scarcity,Pt,2.6663789,1.16E-03,0,9.62E-06
+BESS,Moderate,Fossil resource scarcity,Pt,9.314964,0.29051521,0,3.31E-03
+BESS,Moderate,"Water consumption, Human health",Pt,27.31427,1.08E-02,0,5.91E-05
+BESS,Moderate,"Water consumption, Terrestrial ecosystem",Pt,2.726608,1.23E-03,0,7.45E-06
+BESS,Moderate,"Water consumption, Aquatic ecosystems",Pt,1.44E-04,1.48E-07,0,1.26E-09
+Propane,Moderate,"Global warming, Human health",Pt,43.803706,1.0794558,201.66825,3.33E-02
+Propane,Moderate,"Global warming, Terrestrial ecosystems",Pt,2.1436219,5.28E-02,9.8665519,1.63E-03
+Propane,Moderate,"Global warming, Freshwater ecosystems",Pt,5.85E-05,1.44E-06,2.69E-04,4.45E-08
+Propane,Moderate,Stratospheric ozone depletion,Pt,7.39E-03,9.17E-05,9.43E-03,6.46E-06
+Propane,Moderate,Ionizing radiation,Pt,1.91E-02,9.42E-05,1.85E-02,2.70E-06
+Propane,Moderate,"Ozone formation, Human health",Pt,0.12033098,6.44E-03,0.3722592,2.98E-04
+Propane,Moderate,Fine particulate matter formation,Pt,91.321842,0.98411105,76.55232,4.91E-02
+Propane,Moderate,"Ozone formation, Terrestrial ecosystems",Pt,0.30144101,1.53E-02,0.9202846,7.04E-04
+Propane,Moderate,Terrestrial acidification,Pt,1.1003949,1.22E-02,0.90138514,5.48E-04
+Propane,Moderate,Freshwater eutrophication,Pt,0.33512251,1.39E-03,0.20651795,5.15E-05
+Propane,Moderate,Marine eutrophication,Pt,4.96E-05,3.78E-07,6.51E-05,1.20E-08
+Propane,Moderate,Terrestrial ecotoxicity,Pt,0.57836996,5.54E-03,0.40762313,5.70E-05
+Propane,Moderate,Freshwater ecotoxicity,Pt,0.19830503,3.47E-04,3.73E-02,3.52E-06
+Propane,Moderate,Marine ecotoxicity,Pt,4.34E-02,1.09E-04,1.16E-02,1.34E-06
+Propane,Moderate,Human carcinogenic toxicity,Pt,1282.6006,0.70588997,131.70092,1.53E-02
+Propane,Moderate,Human non-carcinogenic toxicity,Pt,56.145133,0.22201421,12.687206,1.92E-03
+Propane,Moderate,Land use,Pt,0.35118603,7.42E-03,0.26126873,-5.20E-04
+Propane,Moderate,Mineral resource scarcity,Pt,0.20837253,3.00E-04,5.20E-02,5.04E-06
+Propane,Moderate,Fossil resource scarcity,Pt,4.2554756,6.58E-02,10.549508,1.71E-03
+Propane,Moderate,"Water consumption, Human health",Pt,0.5698192,2.79E-03,0.31403176,3.48E-05
+Propane,Moderate,"Water consumption, Terrestrial ecosystem",Pt,6.03E-02,3.22E-04,3.51E-02,4.16E-06
+Propane,Moderate,"Water consumption, Aquatic ecosystems",Pt,5.27E-06,4.05E-08,4.94E-06,6.11E-10
+Sand Battery,Rare,"Global warming, Human health",Pt,27.974114,1.5943854,0.083966742,0.011351037
+Sand Battery,Rare,"Global warming, Terrestrial ecosystems",Pt,1.3686366,0.078004288,0.004107494,0.000555327
+Sand Battery,Rare,"Global warming, Freshwater ecosystems",Pt,3.74E-05,2.13E-06,1.12E-07,1.52E-08
+Sand Battery,Rare,Stratospheric ozone depletion,Pt,0.004577579,0.000144305,5.36E-05,2.29E-06
+Sand Battery,Rare,Ionizing radiation,Pt,0.015925951,0.000154384,0.000129729,5.31E-07
+Sand Battery,Rare,"Ozone formation, Human health",Pt,0.071553284,0.009731562,0.000213355,0.000115441
+Sand Battery,Rare,Fine particulate matter formation,Pt,59.125008,1.5094515,0.17492354,0.017952254
+Sand Battery,Rare,"Ozone formation, Terrestrial ecosystems",Pt,0.16996532,0.023203589,0.00051843,0.000272343
+Sand Battery,Rare,Terrestrial acidification,Pt,0.78604031,0.018262933,0.002259274,0.000191306
+Sand Battery,Rare,Freshwater eutrophication,Pt,0.25758913,0.002028968,0.000817156,8.33E-06
+Sand Battery,Rare,Marine eutrophication,Pt,0.000147266,5.66E-07,7.77E-08,2.97E-09
+Sand Battery,Rare,Terrestrial ecotoxicity,Pt,0.70904189,0.009056366,0.001022836,1.96E-05
+Sand Battery,Rare,Freshwater ecotoxicity,Pt,0.10360187,0.000481013,0.001946279,9.12E-07
+Sand Battery,Rare,Marine ecotoxicity,Pt,0.026867956,0.000158175,0.000366648,3.82E-07
+Sand Battery,Rare,Human carcinogenic toxicity,Pt,181.17661,0.99538465,0.82652934,0.005476614
+Sand Battery,Rare,Human non-carcinogenic toxicity,Pt,34.193647,0.31874337,0.15978774,0.000359435
+Sand Battery,Rare,Land use,Pt,0.27940547,0.018124343,0.010362488,-0.000606827
+Sand Battery,Rare,Mineral resource scarcity,Pt,0.16860774,0.0004159,0.000421075,1.87E-06
+Sand Battery,Rare,Fossil resource scarcity,Pt,0.70733453,0.10065438,0.002212916,0.000643112
+Sand Battery,Rare,"Water consumption, Human health",Pt,0.76816784,0.005018399,0.000846803,1.15E-05
+Sand Battery,Rare,"Water consumption, Terrestrial ecosystem",Pt,0.078350666,0.00056508,0.000657218,1.45E-06
+Sand Battery,Rare,"Water consumption, Aquatic ecosystems",Pt,6.07E-06,6.46E-08,9.61E-09,2.44E-10
+BESS,Rare,"Global warming, Human health",Pt,230.20927,4.8677974,0,5.84E-02
+BESS,Rare,"Global warming, Terrestrial ecosystems",Pt,11.262785,0.23814749,0,2.85E-03
+BESS,Rare,"Global warming, Freshwater ecosystems",Pt,3.08E-04,6.50E-06,0,7.80E-08
+BESS,Rare,Stratospheric ozone depletion,Pt,6.36E-02,8.46E-04,0,1.18E-05
+BESS,Rare,Ionizing radiation,Pt,0.26112239,3.49E-04,0,2.73E-06
+BESS,Rare,"Ozone formation, Human health",Pt,0.6582009,5.74E-02,0,5.93E-04
+BESS,Rare,Fine particulate matter formation,Pt,631.27332,11.395657,0,9.23E-02
+BESS,Rare,"Ozone formation, Terrestrial ecosystems",Pt,1.5746426,0.13446124,0,1.40E-03
+BESS,Rare,Terrestrial acidification,Pt,9.6445613,0.18145091,0,9.83E-04
+BESS,Rare,Freshwater eutrophication,Pt,2.755372,4.51E-03,0,4.28E-05
+BESS,Rare,Marine eutrophication,Pt,1.01E-03,1.50E-06,0,1.52E-08
+BESS,Rare,Terrestrial ecotoxicity,Pt,1.9716641,1.96E-02,0,1.01E-04
+BESS,Rare,Freshwater ecotoxicity,Pt,1.3695908,1.06E-03,0,4.69E-06
+BESS,Rare,Marine ecotoxicity,Pt,0.27080703,3.58E-04,0,1.96E-06
+BESS,Rare,Human carcinogenic toxicity,Pt,251.60629,2.8823204,0,2.82E-02
+BESS,Rare,Human non-carcinogenic toxicity,Pt,497.48423,0.60241806,0,1.85E-03
+BESS,Rare,Land use,Pt,1.7189051,3.25E-02,0,-3.12E-03
+BESS,Rare,Mineral resource scarcity,Pt,2.6663789,1.16E-03,0,9.62E-06
+BESS,Rare,Fossil resource scarcity,Pt,9.314964,0.29051521,0,3.31E-03
+BESS,Rare,"Water consumption, Human health",Pt,27.31427,1.08E-02,0,5.91E-05
+BESS,Rare,"Water consumption, Terrestrial ecosystem",Pt,2.726608,1.23E-03,0,7.45E-06
+BESS,Rare,"Water consumption, Aquatic ecosystems",Pt,1.44E-04,1.48E-07,0,1.26E-09
+Propane,Rare,"Global warming, Human health",Pt,34.357795,1.0794558,100.83413,3.33E-02
+Propane,Rare,"Global warming, Terrestrial ecosystems",Pt,1.6811981,5.28E-02,4.9332759,1.63E-03
+Propane,Rare,"Global warming, Freshwater ecosystems",Pt,4.59E-05,1.44E-06,1.35E-04,4.45E-08
+Propane,Rare,Stratospheric ozone depletion,Pt,6.23E-03,9.17E-05,4.71E-03,6.46E-06
+Propane,Rare,Ionizing radiation,Pt,1.67E-02,9.42E-05,9.27E-03,2.70E-06
+Propane,Rare,"Ozone formation, Human health",Pt,9.80E-02,6.44E-03,0.1861296,2.98E-04
+Propane,Rare,Fine particulate matter formation,Pt,84.386572,0.98411105,38.27616,4.91E-02
+Propane,Rare,"Ozone formation, Terrestrial ecosystems",Pt,0.24047056,1.53E-02,0.4601423,7.04E-04
+Propane,Rare,Terrestrial acidification,Pt,1.0167681,1.22E-02,0.45069257,5.48E-04
+Propane,Rare,Freshwater eutrophication,Pt,0.30908806,1.39E-03,0.10325898,5.15E-05
+Propane,Rare,Marine eutrophication,Pt,4.05E-05,3.78E-07,3.25E-05,1.20E-08
+Propane,Rare,Terrestrial ecotoxicity,Pt,0.55430928,5.54E-03,0.20381156,5.70E-05
+Propane,Rare,Freshwater ecotoxicity,Pt,0.19363846,3.47E-04,1.86E-02,3.52E-06
+Propane,Rare,Marine ecotoxicity,Pt,4.22E-02,1.09E-04,5.79E-03,1.34E-06
+Propane,Rare,Human carcinogenic toxicity,Pt,1274.4843,0.70588997,65.850461,1.53E-02
+Propane,Rare,Human non-carcinogenic toxicity,Pt,54.36663,0.22201421,6.343603,1.92E-03
+Propane,Rare,Land use,Pt,0.31467652,7.42E-03,0.13063437,-5.20E-04
+Propane,Rare,Mineral resource scarcity,Pt,0.20417503,3.00E-04,2.60E-02,5.04E-06
+Propane,Rare,Fossil resource scarcity,Pt,2.4713903,6.58E-02,5.2747539,1.71E-03
+Propane,Rare,"Water consumption, Human health",Pt,0.53465122,2.79E-03,0.15701588,3.48E-05
+Propane,Rare,"Water consumption, Terrestrial ecosystem",Pt,5.65E-02,3.22E-04,1.76E-02,4.16E-06
+Propane,Rare,"Water consumption, Aquatic ecosystems",Pt,4.73E-06,4.05E-08,2.47E-06,6.11E-10
+Sand Battery,Frequent,"Global warming, Human health",Pt,27.974114,1.5943854,0.33487305,0.011351037
+Sand Battery,Frequent,"Global warming, Terrestrial ecosystems",Pt,1.3686366,0.078004288,0.01638135,0.000555327
+Sand Battery,Frequent,"Global warming, Freshwater ecosystems",Pt,3.74E-05,2.13E-06,4.47E-07,1.52E-08
+Sand Battery,Frequent,Stratospheric ozone depletion,Pt,0.004577579,0.000144305,0.000213984,2.29E-06
+Sand Battery,Frequent,Ionizing radiation,Pt,0.015925951,0.000154384,0.0005184,5.31E-07
+Sand Battery,Frequent,"Ozone formation, Human health",Pt,0.071553284,0.009731562,0.00085072,0.000115441
+Sand Battery,Frequent,Fine particulate matter formation,Pt,59.125008,1.5094515,0.69854542,0.017952254
+Sand Battery,Frequent,"Ozone formation, Terrestrial ecosystems",Pt,0.16996532,0.023203589,0.002067335,0.000272343
+Sand Battery,Frequent,Terrestrial acidification,Pt,0.78604031,0.018262933,0.009024531,0.000191306
+Sand Battery,Frequent,Freshwater eutrophication,Pt,0.25758913,0.002028968,0.003263997,8.33E-06
+Sand Battery,Frequent,Marine eutrophication,Pt,0.000147266,5.66E-07,3.09E-07,2.97E-09
+Sand Battery,Frequent,Terrestrial ecotoxicity,Pt,0.70904189,0.009056366,0.004069959,1.96E-05
+Sand Battery,Frequent,Freshwater ecotoxicity,Pt,0.10360187,0.000481013,0.007783678,9.12E-07
+Sand Battery,Frequent,Marine ecotoxicity,Pt,0.026867956,0.000158175,0.001466074,3.82E-07
+Sand Battery,Frequent,Human carcinogenic toxicity,Pt,181.17661,0.99538465,3.2889437,0.005476614
+Sand Battery,Frequent,Human non-carcinogenic toxicity,Pt,34.193647,0.31874337,0.63881932,0.000359435
+Sand Battery,Frequent,Land use,Pt,0.27940547,0.018124343,0.041426,-0.000606827
+Sand Battery,Frequent,Mineral resource scarcity,Pt,0.16860774,0.0004159,0.001682289,1.87E-06
+Sand Battery,Frequent,Fossil resource scarcity,Pt,0.70733453,0.10065438,0.008825811,0.000643112
+Sand Battery,Frequent,"Water consumption, Human health",Pt,0.76816784,0.005018399,0.003660232,1.15E-05
+Sand Battery,Frequent,"Water consumption, Terrestrial ecosystem",Pt,0.078350666,0.00056508,0.00254898,1.45E-06
+Sand Battery,Frequent,"Water consumption, Aquatic ecosystems",Pt,6.07E-06,6.46E-08,3.96E-08,2.44E-10
+BESS,Frequent,"Global warming, Human health",Pt,230.20927,4.8677974,0,5.84E-02
+BESS,Frequent,"Global warming, Terrestrial ecosystems",Pt,11.262785,0.23814749,0,2.85E-03
+BESS,Frequent,"Global warming, Freshwater ecosystems",Pt,3.08E-04,6.50E-06,0,7.80E-08
+BESS,Frequent,Stratospheric ozone depletion,Pt,6.36E-02,8.46E-04,0,1.18E-05
+BESS,Frequent,Ionizing radiation,Pt,0.26112239,3.49E-04,0,2.73E-06
+BESS,Frequent,"Ozone formation, Human health",Pt,0.6582009,5.74E-02,0,5.93E-04
+BESS,Frequent,Fine particulate matter formation,Pt,631.27332,11.395657,0,9.23E-02
+BESS,Frequent,"Ozone formation, Terrestrial ecosystems",Pt,1.5746426,0.13446124,0,1.40E-03
+BESS,Frequent,Terrestrial acidification,Pt,9.6445613,0.18145091,0,9.83E-04
+BESS,Frequent,Freshwater eutrophication,Pt,2.755372,4.51E-03,0,4.28E-05
+BESS,Frequent,Marine eutrophication,Pt,1.01E-03,1.50E-06,0,1.52E-08
+BESS,Frequent,Terrestrial ecotoxicity,Pt,1.9716641,1.96E-02,0,1.01E-04
+BESS,Frequent,Freshwater ecotoxicity,Pt,1.3695908,1.06E-03,0,4.69E-06
+BESS,Frequent,Marine ecotoxicity,Pt,0.27080703,3.58E-04,0,1.96E-06
+BESS,Frequent,Human carcinogenic toxicity,Pt,251.60629,2.8823204,0,2.82E-02
+BESS,Frequent,Human non-carcinogenic toxicity,Pt,497.48423,0.60241806,0,1.85E-03
+BESS,Frequent,Land use,Pt,1.7189051,3.25E-02,0,-3.12E-03
+BESS,Frequent,Mineral resource scarcity,Pt,2.6663789,1.16E-03,0,9.62E-06
+BESS,Frequent,Fossil resource scarcity,Pt,9.314964,0.29051521,0,3.31E-03
+BESS,Frequent,"Water consumption, Human health",Pt,27.31427,1.08E-02,0,5.91E-05
+BESS,Frequent,"Water consumption, Terrestrial ecosystem",Pt,2.726608,1.23E-03,0,7.45E-06
+BESS,Frequent,"Water consumption, Aquatic ecosystems",Pt,1.44E-04,1.48E-07,0,1.26E-09
+Propane,Frequent,"Global warming, Human health",Pt,62.695527,1.0794558,403.33651,3.33E-02
+Propane,Frequent,"Global warming, Terrestrial ecosystems",Pt,3.0684696,5.28E-02,19.733104,1.63E-03
+Propane,Frequent,"Global warming, Freshwater ecosystems",Pt,8.38E-05,1.44E-06,5.39E-04,4.45E-08
+Propane,Frequent,Stratospheric ozone depletion,Pt,9.71E-03,9.17E-05,1.89E-02,6.46E-06
+Propane,Frequent,Ionizing radiation,Pt,2.39E-02,9.42E-05,3.71E-02,2.70E-06
+Propane,Frequent,"Ozone formation, Human health",Pt,0.16494556,6.44E-03,0.7445184,2.98E-04
+Propane,Frequent,Fine particulate matter formation,Pt,105.19238,6.44E-03,153.10464,4.91E-02
+Propane,Frequent,"Ozone formation, Terrestrial ecosystems",Pt,0.42338193,1.53E-02,1.8405692,7.04E-04
+Propane,Frequent,Terrestrial acidification,Pt,1.2676483,1.22E-02,1.8027703,5.48E-04
+Propane,Frequent,Freshwater eutrophication,Pt,0.38719141,1.39E-03,0.4130359,5.15E-05
+Propane,Frequent,Marine eutrophication,Pt,6.79E-05,3.78E-07,1.30E-04,1.20E-08
+Propane,Frequent,Terrestrial ecotoxicity,Pt,0.6264913,5.54E-03,0.81524626,5.70E-05
+Propane,Frequent,Freshwater ecotoxicity,Pt,0.20763818,3.47E-04,7.45E-02,3.52E-06
+Propane,Frequent,Marine ecotoxicity,Pt,4.57E-02,1.09E-04,2.32E-02,1.34E-06
+Propane,Frequent,Human carcinogenic toxicity,Pt,1298.833,0.70588997,263.40184,1.53E-02
+Propane,Frequent,Human non-carcinogenic toxicity,Pt,59.70214,0.22201421,25.374412,1.92E-03
+Propane,Frequent,Land use,Pt,0.42420505,7.42E-03,0.52253746,-5.20E-04
+Propane,Frequent,Mineral resource scarcity,Pt,0.21676752,3.00E-04,0.10408067,5.04E-06
+Propane,Frequent,Fossil resource scarcity,Pt,7.8236462,6.58E-02,21.099016,1.71E-03
+Propane,Frequent,"Water consumption, Human health",Pt,0.64015514,2.79E-03,0.62806351,3.48E-05
+Propane,Frequent,"Water consumption, Terrestrial ecosystem",Pt,6.79E-02,3.22E-04,7.03E-02,4.16E-06
+Propane,Frequent,"Water consumption, Aquatic ecosystems",Pt,6.34E-06,4.05E-08,9.87E-06,6.11E-10
