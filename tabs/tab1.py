@@ -125,12 +125,12 @@ def show():
 
         # Display chart
         col2.plotly_chart(fig)
-        st.divider() # Divider for better visual separation
+        # st.divider() # Divider for better visual separation
         # Add all data for each system as a table
-        col2.subheader(f"Data for all midpoints and all systems")
+        # col2.subheader(f"Data for all midpoints and all systems")
         # Save a df_display that has "System" as the index and removes the "Outage" column
-        df_display = df.drop(columns=['Outage']).set_index('System')
-        col2.table(df_display)
+        # df_display = df.drop(columns=['Outage']).set_index('System')
+        # col2.table(df_display)
 
     st.divider()
     st.subheader("Selected Options")
