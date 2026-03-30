@@ -50,6 +50,23 @@ BESS,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E
 BESS,Rare,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656
 BESS,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801
 BESS,Rare,Water consumption,m3,792.33662,0.48537743,0,0.00347553
+BESS,Regular,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772
+BESS,Regular,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009
+BESS,Regular,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974
+BESS,Regular,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432
+BESS,Regular,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968
+BESS,Regular,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786
+BESS,Regular,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628
+BESS,Regular,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108
+BESS,Regular,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877
+BESS,Regular,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466
+BESS,Regular,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05
+BESS,Regular,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928
+BESS,Regular,Ozone formation,kg NOx eq,88.503354,7.6348107,0,0.079230343
+BESS,Regular,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06
+BESS,Regular,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656
+BESS,Regular,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801
+BESS,Regular,Water consumption,m3,792.33662,0.48537743,0,0.00347553
 Propane,Frequent,Fine particulate matter formation,kg PM2.5 eq,10.038052,0.09383631,14.602384,0.004683807
 Propane,Frequent,Fossil resource scarcity,kg oil eq,3267.9861,22.17062,8563.4784,0.59888082
 Propane,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",1108.4192,1.8533303,397.67292,0.018744891
@@ -101,6 +118,23 @@ Propane,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.00070339,1.04E-05,0.000
 Propane,Rare,Terrestrial acidification,kg SO2 eq,17.736932,0.21343569,7.8629908,0.009564311
 Propane,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",179612.76,1796.6486,66105.685,18.487857
 Propane,Rare,Water consumption,m3,28.005119,0.12813463,7.860168,0.002099806
+Propane,Regular,Fine particulate matter formation,kg PM2.5 eq,18.640206,0.09383631,62.060132,0.004683807
+Propane,Regular,Fossil resource scarcity,kg oil eq,12615.888,22.17062,36394.783,0.59888082
+Propane,Regular,Freshwater ecotoxicity,"kg 1,4-DCB",1432.4405,1.8533303,1690.1099,0.018744891
+Propane,Regular,Freshwater eutrophication,kg P eq,4.00565,0.007648736,9.6896573,0.000284129
+Propane,Regular,Global warming,kg CO2 eq,11984.348,69.737991,110744.69,2.1495215
+Propane,Regular,Human carcinogenic toxicity,"kg 1,4-DCB",25360.119,12.747536,20215.71,0.27651674
+Propane,Regular,Human non-carcinogenic toxicity,"kg 1,4-DCB",21782.05,58.374,28361.527,0.50507671
+Propane,Regular,Ionizing radiation,kBq Co-60 eq,389.74211,0.66597494,1113.4157,0.019047604
+Propane,Regular,Land use,m2a crop eq,374.71186,3.0903799,925.82193,-0.21746666
+Propane,Regular,Marine ecotoxicity,"kg 1,4-DCB",2134.0075,3.8472209,3464.6563,0.047186264
+Propane,Regular,Marine eutrophication,kg N eq,0.40693838,0.000823148,1.2029898,2.60E-05
+Propane,Regular,Mineral resource scarcity,kg Cu eq,164.41419,0.1815934,268.09598,0.003053307
+Propane,Regular,Ozone formation,kg NOx eq,64.826467,0.86269732,432.69739,0.039811456
+Propane,Regular,Stratospheric ozone depletion,kg CFC11 eq,0.002803221,1.04E-05,0.009054401,7.30E-07
+Propane,Regular,Terrestrial acidification,kg SO2 eq,41.079185,0.21343569,133.67084,0.009564311
+Propane,Regular,Terrestrial ecotoxicity,"kg 1,4-DCB",304476.16,1796.6486,1123796.7,18.487857
+Propane,Regular,Water consumption,m3,56.17905,0.12813463,133.62286,0.002099806
 Sand Battery,Frequent,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.066666431,0.001711432
 Sand Battery,Frequent,Fossil resource scarcity,kg oil eq,443.01006,33.799331,4.4524288,0.21209761
 Sand Battery,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,41.626678,0.004858608
@@ -152,3 +186,20 @@ Sand Battery,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,
 Sand Battery,Rare,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.039411264,0.003337895
 Sand Battery,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,331.72862,6.3693035
 Sand Battery,Rare,Water consumption,m3,30.696253,0.21728166,1.6772257,0.000676099
+Sand Battery,Regular,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.28321361,0.001711432
+Sand Battery,Regular,Fossil resource scarcity,kg oil eq,443.01006,33.799331,18.906228,0.21209761
+Sand Battery,Regular,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,176.90507,0.004858608
+Sand Battery,Regular,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.076560043,4.60E-05
+Sand Battery,Regular,Global warming,kg CO2 eq,1807.221,103.00495,91.870118,0.73332382
+Sand Battery,Regular,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,252.0821,0.098899272
+Sand Battery,Regular,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,713.87806,0.09454341
+Sand Battery,Regular,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,15.563166,0.003751751
+Sand Battery,Regular,Land use,m2a crop eq,116.4751,7.5518178,73.390752,-0.25308276
+Sand Battery,Regular,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,219.0802,0.013429166
+Sand Battery,Regular,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.002855491,6.45E-06
+Sand Battery,Regular,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,4.3314592,0.001133977
+Sand Battery,Regular,Ozone formation,kg NOx eq,9.5864754,1.30630477,0.48967507,0.015412778
+Sand Battery,Regular,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,0.00010267,2.59E-07
+Sand Battery,Regular,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.66882259,0.003337895
+Sand Battery,Regular,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,5602.3954,6.3693035
+Sand Battery,Regular,Water consumption,m3,30.696253,0.21728166,26.894039,0.000676099

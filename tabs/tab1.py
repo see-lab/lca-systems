@@ -21,7 +21,7 @@ def show():
             ["Carbon Footprint", "ReCiPe Endpoint H", "ReCiPe Midpoint H"])
 
         outage_frequency = st.selectbox("Choose an outage frequency:", 
-            ["Rare (5x/year)", "Moderate outages (10x/yr)", "Frequent outages (20x/yr)"],
+            ["Rare (5x/year)", "Moderate outages (10x/yr)", "Frequent outages (20x/yr)", "Regular heating use (85x/yr)"],
             index=1)
 
         relative_results = st.checkbox("Scale plots to relative values?",value=False)
@@ -49,14 +49,14 @@ def show():
         df = df[df['Outage'] == 'Rare']
     elif outage_frequency == "Moderate outages (10x/yr)":
         df = df[df['Outage'] == 'Moderate']
-    else:        
+    elif outage_frequency == "Frequent outages (20x/yr)":
         df = df[df['Outage'] == 'Frequent']
+    else:
+        df = df[df['Outage'] == 'Regular']
     
     # Save separate dataframe for endpoints that sum all midpoints down to one score for each system
     # Sum all midpoint categories for each system to get single endpoint scores
     df_endpoint = df.groupby('System')[phases].sum().reset_index()
-    print("Endpoint scores (sum of all midpoints by system):")
-    print(df_endpoint)
 
     #  Modifications if relative results is selected
     if relative_results:
