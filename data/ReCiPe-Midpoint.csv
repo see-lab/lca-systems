@@ -1,163 +1,154 @@
-﻿System,Outage,Midpoint,Unit,Materials & Mfg,Transport,Use,End-of-Life,,,,,
-BESS,Frequent,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968,,,,,
-BESS,Frequent,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06,,,,,
-BESS,Frequent,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108,,,,,
-BESS,Frequent,"Ozone formation, Human health",kg NOx eq,43.359761,3.7799778,0,0.039094019,,,,,
-BESS,Frequent,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772,,,,,
-BESS,Frequent,"Ozone formation, Terrestrial ecosystems",kg NOx eq,45.143593,3.8548329,0,0.040136324,,,,,
-BESS,Frequent,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656,,,,,
-BESS,Frequent,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432,,,,,
-BESS,Frequent,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05,,,,,
-BESS,Frequent,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801,,,,,
-BESS,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974,,,,,
-BESS,Frequent,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466,,,,,
-BESS,Frequent,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786,,,,,
-BESS,Frequent,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628,,,,,
-BESS,Frequent,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877,,,,,
-BESS,Frequent,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928,,,,,
-BESS,Frequent,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009,,,,,
-BESS,Frequent,Water consumption,m3,792.33662,0.48537743,0,0.00347553,,,,,
-BESS,Moderate,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968,,,,,
-BESS,Moderate,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06,,,,,
-BESS,Moderate,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108,,,,,
-BESS,Moderate,"Ozone formation, Human health",kg NOx eq,43.359761,3.7799778,0,0.039094019,,,,,
-BESS,Moderate,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772,,,,,
-BESS,Moderate,"Ozone formation, Terrestrial ecosystems",kg NOx eq,45.143593,3.8548329,0,0.040136324,,,,,
-BESS,Moderate,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656,,,,,
-BESS,Moderate,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432,,,,,
-BESS,Moderate,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05,,,,,
-BESS,Moderate,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801,,,,,
-BESS,Moderate,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974,,,,,
-BESS,Moderate,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466,,,,,
-BESS,Moderate,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786,,,,,
-BESS,Moderate,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628,,,,,
-BESS,Moderate,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877,,,,,
-BESS,Moderate,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928,,,,,
-BESS,Moderate,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009,,,,,
-BESS,Moderate,Water consumption,m3,792.33662,0.48537743,0,0.00347553,,,,,
-BESS,Rare,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968,,,,,
-BESS,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06,,,,,
-BESS,Rare,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108,,,,,
-BESS,Rare,"Ozone formation, Human health",kg NOx eq,43.359761,3.7799778,0,0.039094019,,,,,
-BESS,Rare,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772,,,,,
-BESS,Rare,"Ozone formation, Terrestrial ecosystems",kg NOx eq,45.143593,3.8548329,0,0.040136324,,,,,
-BESS,Rare,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656,,,,,
-BESS,Rare,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432,,,,,
-BESS,Rare,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05,,,,,
-BESS,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801,,,,,
-BESS,Rare,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974,,,,,
-BESS,Rare,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466,,,,,
-BESS,Rare,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786,,,,,
-BESS,Rare,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628,,,,,
-BESS,Rare,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877,,,,,
-BESS,Rare,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928,,,,,
-BESS,Rare,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009,,,,,
-BESS,Rare,Water consumption,m3,792.33662,0.48537743,0,0.00347553,,,,,
-Propane,Frequent,Global warming,kg CO2 eq,4050.552,69.737991,26057.573,2.1495215,,,,,
-Propane,Frequent,Stratospheric ozone depletion,kg CFC11 eq,0.001097109,1.04E-05,0.002130447,7.30E-07,,,,,
-Propane,Frequent,Ionizing radiation,kBq Co-60 eq,169.20913,0.66597494,261.98017,0.019047604,,,,,
-Propane,Frequent,"Ozone formation, Human health",kg NOx eq,10.864352,0.42410063,49.042652,0.019639502,,,,,
-Propane,Frequent,Fine particulate matter formation,kg PM2.5 eq,10.038052,0.09383631,14.602384,0.004683807,,,,,
-Propane,Frequent,"Ozone formation, Terrestrial ecosystems",kg NOx eq,12.138548,0.43859669,52.768499,0.020171954,,,,,
-Propane,Frequent,Terrestrial acidification,kg SO2 eq,22.113605,0.21343569,31.451963,0.009564311,,,,,
-Propane,Frequent,Freshwater eutrophication,kg P eq,2.1374492,0.007648736,2.2799194,0.000284129,,,,,
-Propane,Frequent,Marine eutrophication,kg N eq,0.1478144,0.000823148,0.28305642,2.60E-05,,,,,
-Propane,Frequent,Terrestrial ecotoxicity,"kg 1,4-DCB",203024.65,1796.6486,264422.74,18.487857,,,,,
-Propane,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",1108.4192,1.8533303,397.67292,0.018744891,,,,,
-Propane,Frequent,Marine ecotoxicity,"kg 1,4-DCB",1606.1651,3.8472209,815.21325,0.047186264,,,,,
-Propane,Frequent,Human carcinogenic toxicity,"kg 1,4-DCB",23454.751,12.747536,4756.6375,0.27651674,,,,,
-Propane,Frequent,Human non-carcinogenic toxicity,"kg 1,4-DCB",15701.514,58.374,6673.3004,0.50507671,,,,,
-Propane,Frequent,Land use,m2a crop eq,176.83302,3.0903799,217.84045,-0.21746666,,,,,
-Propane,Frequent,Mineral resource scarcity,kg Cu eq,131.34658,0.1815934,63.081407,0.003053307,,,,,
-Propane,Frequent,Fossil resource scarcity,kg oil eq,3267.9861,22.17062,8563.4784,0.59888082,,,,,
-Propane,Frequent,Water consumption,m3,33.287732,0.12813463,31.440672,0.002099806,,,,,
-Propane,Moderate,Global warming,kg CO2 eq,2829.9681,69.737991,13028.787,2.1495215,,,,,
-Propane,Moderate,Stratospheric ozone depletion,kg CFC11 eq,0.00083463,1.04E-05,0.001065224,7.30E-07,,,,,
-Propane,Moderate,Ionizing radiation,kBq Co-60 eq,135.28098,0.66597494,130.99009,0.019047604,,,,,
-Propane,Moderate,"Ozone formation, Human health",kg NOx eq,7.9261845,0.42410063,24.521326,0.019639502,,,,,
-Propane,Moderate,Fine particulate matter formation,kg PM2.5 eq,8.7146443,0.09383631,7.301192,0.004683807,,,,,
-Propane,Moderate,"Ozone formation, Terrestrial ecosystems",kg NOx eq,8.6423205,0.43859669,26.384249,0.020171954,,,,,
-Propane,Moderate,Terrestrial acidification,kg SO2 eq,19.195823,0.21343569,15.725982,0.009564311,,,,,
-Propane,Moderate,Freshwater eutrophication,kg P eq,1.8500337,0.007648736,1.1399597,0.000284129,,,,,
-Propane,Moderate,Marine eutrophication,kg N eq,0.10794917,0.000823148,0.14152821,2.60E-05,,,,,
-Propane,Moderate,Terrestrial ecotoxicity,"kg 1,4-DCB",187416.72,1796.6486,132211.37,18.487857,,,,,
-Propane,Moderate,Freshwater ecotoxicity,"kg 1,4-DCB",1058.5698,1.8533303,198.83646,0.018744891,,,,,
-Propane,Moderate,Marine ecotoxicity,"kg 1,4-DCB",1524.9586,3.8472209,407.60663,0.047186264,,,,,
-Propane,Moderate,Human carcinogenic toxicity,"kg 1,4-DCB",23161.617,12.747536,2378.3188,0.27651674,,,,,
-Propane,Moderate,Human non-carcinogenic toxicity,"kg 1,4-DCB",14766.047,58.374,3336.6502,0.50507671,,,,,
-Propane,Moderate,Land use,m2a crop eq,146.39012,3.0903799,108.92023,-0.21746666,,,,,
-Propane,Moderate,Mineral resource scarcity,kg Cu eq,126.25925,0.1815934,31.540704,0.003053307,,,,,
-Propane,Moderate,Fossil resource scarcity,kg oil eq,1829.8474,22.17062,4281.7392,0.59888082,,,,,
-Propane,Moderate,Water consumption,m3,29.76599,0.12813463,15.720336,0.002099806,,,,,
-Propane,Rare,Global warming,kg CO2 eq,2219.6761,69.737991,6514.3934,2.1495215,,,,,
-Propane,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.00070339,1.04E-05,0.000532612,7.30E-07,,,,,
-Propane,Rare,Ionizing radiation,kBq Co-60 eq,118.3169,0.66597494,65.495043,0.019047604,,,,,
-Propane,Rare,"Ozone formation, Human health",kg NOx eq,6.4571006,0.42410063,12.260663,0.019639502,,,,,
-Propane,Rare,Fine particulate matter formation,kg PM2.5 eq,8.0529402,0.09383631,3.650596,0.004683807,,,,,
-Propane,Rare,"Ozone formation, Terrestrial ecosystems",kg NOx eq,6.8942069,0.43859669,13.192125,0.020171954,,,,,
-Propane,Rare,Terrestrial acidification,kg SO2 eq,17.736932,0.21343569,7.8629908,0.009564311,,,,,
-Propane,Rare,Freshwater eutrophication,kg P eq,1.706326,0.007648736,0.56997984,0.000284129,,,,,
-Propane,Rare,Marine eutrophication,kg N eq,0.088016559,0.000823148,0.070764105,2.60E-05,,,,,
-Propane,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",179612.76,1796.6486,66105.685,18.487857,,,,,
-Propane,Rare,Freshwater ecotoxicity,"kg 1,4-DCB",1033.645,1.8533303,99.418229,0.018744891,,,,,
-Propane,Rare,Marine ecotoxicity,"kg 1,4-DCB",1484.3553,3.8472209,203.80331,0.047186264,,,,,
-Propane,Rare,Human carcinogenic toxicity,"kg 1,4-DCB",23015.05,12.747536,1189.1594,0.27651674,,,,,
-Propane,Rare,Human non-carcinogenic toxicity,"kg 1,4-DCB",14298.314,58.374,1668.3251,0.50507671,,,,,
-Propane,Rare,Land use,m2a crop eq,131.16867,3.0903799,54.460113,-0.21746666,,,,,
-Propane,Rare,Mineral resource scarcity,kg Cu eq,123.71559,0.1815934,15.770352,0.003053307,,,,,
-Propane,Rare,Fossil resource scarcity,kg oil eq,1110.7781,22.17062,2140.8696,0.59888082,,,,,
-Propane,Rare,Water consumption,m3,28.005119,0.12813463,7.860168,0.002099806,,,,,
-Sand Battery,Frequent,Global warming,kg CO2 eq,1807.221,103.00495,21.632866,0.73332382,,,,,
-Sand Battery,Frequent,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,2.42E-05,2.59E-07,,,,,
-Sand Battery,Frequent,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,3.6628534,0.003751751,,,,,
-Sand Battery,Frequent,"Ozone formation, Human health",kg NOx eq,4.713729,0.64108133,0.056040392,0.007605008,,,,,
-Sand Battery,Frequent,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.066666431,0.001711432,,,,,
-Sand Battery,Frequent,"Ozone formation, Terrestrial ecosystems",kg NOx eq,4.8727464,0.66522344,0.059269291,0.007807769,,,,,
-Sand Battery,Frequent,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.15742589,0.003337895,,,,,
-Sand Battery,Frequent,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.018020639,4.60E-05,,,,,
-Sand Battery,Frequent,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.000672704,6.45E-06,,,,,
-Sand Battery,Frequent,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,1319.9786,6.3693035,,,,,
-Sand Battery,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,41.626678,0.004858608,,,,,
-Sand Battery,Frequent,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,51.55291,0.013429166,,,,,
-Sand Battery,Frequent,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,59.392487,0.098899272,,,,,
-Sand Battery,Frequent,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,167.99354,0.09454341,,,,,
-Sand Battery,Frequent,Land use,m2a crop eq,116.4751,7.5518178,17.270958,-0.25308276,,,,,
-Sand Battery,Frequent,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,1.0194777,0.001133977,,,,,
-Sand Battery,Frequent,Fossil resource scarcity,kg oil eq,443.01006,33.799331,4.4524288,0.21209761,,,,,
-Sand Battery,Frequent,Water consumption,m3,30.696253,0.21728166,6.4053781,0.000676099,,,,,
-Sand Battery,Moderate,Global warming,kg CO2 eq,1807.221,103.00495,10.827135,0.73332382,,,,,
-Sand Battery,Moderate,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,1.21E-05,2.59E-07,,,,,
-Sand Battery,Moderate,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,1.832036,0.003751751,,,,,
-Sand Battery,Moderate,"Ozone formation, Human health",kg NOx eq,4.713729,0.64108133,0.028049858,0.007605008,,,,,
-Sand Battery,Moderate,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.03335148,0.001711432,,,,,
-Sand Battery,Moderate,"Ozone formation, Terrestrial ecosystems",kg NOx eq,4.8727464,0.66522344,0.02966515,0.007807769,,,,,
-Sand Battery,Moderate,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.078749472,0.003337895,,,,,
-Sand Battery,Moderate,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.009014577,4.60E-05,,,,,
-Sand Battery,Moderate,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.000336891,6.45E-06,,,,,
-Sand Battery,Moderate,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,661.14529,6.3693035,,,,,
-Sand Battery,Moderate,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,20.814618,0.004858608,,,,,
-Sand Battery,Moderate,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,25.779481,0.013429166,,,,,
-Sand Battery,Moderate,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,29.747932,0.098899272,,,,,
-Sand Battery,Moderate,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,84.01131,0.09454341,,,,,
-Sand Battery,Moderate,Land use,m2a crop eq,116.4751,7.5518178,8.6371429,-0.25308276,,,,,
-Sand Battery,Moderate,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,0.50994211,0.001133977,,,,,
-Sand Battery,Moderate,Fossil resource scarcity,kg oil eq,443.01006,33.799331,2.2287674,0.21209761,,,,,
-Sand Battery,Moderate,Water consumption,m3,30.696253,0.21728166,3.2532765,0.000676099,,,,,
-Sand Battery,Rare,Global warming,kg CO2 eq,1807.221,103.00495,5.4242691,0.73332382,,,,,
-Sand Battery,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,6.05E-06,2.59E-07,,,,,
-Sand Battery,Rare,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,0.91662733,0.003751751,,,,,
-Sand Battery,Rare,"Ozone formation, Human health",kg NOx eq,4.713729,0.64108133,0.014054591,0.007605008,,,,,
-Sand Battery,Rare,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.016694004,0.001711432,,,,,
-Sand Battery,Rare,"Ozone formation, Terrestrial ecosystems",kg NOx eq,4.8727464,0.66522344,0.01486308,0.007807769,,,,,
-Sand Battery,Rare,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.039411264,0.003337895,,,,,
-Sand Battery,Rare,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.004511545,4.60E-05,,,,,
-Sand Battery,Rare,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.000168984,6.45E-06,,,,,
-Sand Battery,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,331.72862,6.3693035,,,,,
-Sand Battery,Rare,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,10.408587,0.004858608,,,,,
-Sand Battery,Rare,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,12.892767,0.013429166,,,,,
-Sand Battery,Rare,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,14.925654,0.098899272,,,,,
-Sand Battery,Rare,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,42.020193,0.09454341,,,,,
-Sand Battery,Rare,Land use,m2a crop eq,116.4751,7.5518178,4.3202357,-0.25308276,,,,,
-Sand Battery,Rare,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,0.2551743,0.001133977,,,,,
-Sand Battery,Rare,Fossil resource scarcity,kg oil eq,443.01006,33.799331,1.1169367,0.21209761,,,,,
-Sand Battery,Rare,Water consumption,m3,30.696253,0.21728166,1.6772257,0.000676099,,,,,
+﻿System,Outage,Midpoint,Unit,Materials & Mfg,Transport,Use,End-of-Life
+BESS,Frequent,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772
+BESS,Frequent,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009
+BESS,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974
+BESS,Frequent,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432
+BESS,Frequent,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968
+BESS,Frequent,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786
+BESS,Frequent,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628
+BESS,Frequent,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108
+BESS,Frequent,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877
+BESS,Frequent,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466
+BESS,Frequent,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05
+BESS,Frequent,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928
+BESS,Frequent,Ozone formation,kg NOx eq,88.503354,7.6348107,0,0.079230343
+BESS,Frequent,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06
+BESS,Frequent,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656
+BESS,Frequent,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801
+BESS,Frequent,Water consumption,m3,792.33662,0.48537743,0,0.00347553
+BESS,Moderate,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772
+BESS,Moderate,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009
+BESS,Moderate,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974
+BESS,Moderate,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432
+BESS,Moderate,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968
+BESS,Moderate,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786
+BESS,Moderate,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628
+BESS,Moderate,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108
+BESS,Moderate,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877
+BESS,Moderate,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466
+BESS,Moderate,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05
+BESS,Moderate,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928
+BESS,Moderate,Ozone formation,kg NOx eq,88.503354,7.6348107,0,0.079230343
+BESS,Moderate,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06
+BESS,Moderate,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656
+BESS,Moderate,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801
+BESS,Moderate,Water consumption,m3,792.33662,0.48537743,0,0.00347553
+BESS,Rare,Fine particulate matter formation,kg PM2.5 eq,60.262192,1.0872814,0,0.00879772
+BESS,Rare,Fossil resource scarcity,kg oil eq,4447.686,95.804282,0,1.0903009
+BESS,Rare,Freshwater ecotoxicity,"kg 1,4-DCB",7322.1387,5.6643857,0,0.024975974
+BESS,Rare,Freshwater eutrophication,kg P eq,15.210869,0.024869695,0,0.000236432
+BESS,Rare,Global warming,kg CO2 eq,14872.456,314.4804,0,3.7696968
+BESS,Rare,Human carcinogenic toxicity,"kg 1,4-DCB",4543.7083,52.049917,0,0.50839786
+BESS,Rare,Human non-carcinogenic toxicity,"kg 1,4-DCB",130839.03,158.40169,0,0.48600628
+BESS,Rare,Ionizing radiation,kBq Co-60 eq,1845.0996,2.4642207,0,0.019286108
+BESS,Rare,Land use,m2a crop eq,716.44457,13.561915,0,-1.3009877
+BESS,Rare,Marine ecotoxicity,"kg 1,4-DCB",9526.1754,12.589311,0,0.069033466
+BESS,Rare,Marine eutrophication,kg N eq,2.1851143,0.00325188,0,3.32E-05
+BESS,Rare,Mineral resource scarcity,kg Cu eq,1615.6264,0.70516157,0,0.00582928
+BESS,Rare,Ozone formation,kg NOx eq,88.503354,7.6348107,0,0.079230343
+BESS,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.007178139,9.56E-05,0,1.33E-06
+BESS,Rare,Terrestrial acidification,kg SO2 eq,168.23763,3.165619,0,0.017158656
+BESS,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",639202.72,6348.055,0,32.741801
+BESS,Rare,Water consumption,m3,792.33662,0.48537743,0,0.00347553
+Propane,Frequent,Fine particulate matter formation,kg PM2.5 eq,10.038052,0.09383631,14.602384,0.004683807
+Propane,Frequent,Fossil resource scarcity,kg oil eq,3267.9861,22.17062,8563.4784,0.59888082
+Propane,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",1108.4192,1.8533303,397.67292,0.018744891
+Propane,Frequent,Freshwater eutrophication,kg P eq,2.1374492,0.007648736,2.2799194,0.000284129
+Propane,Frequent,Global warming,kg CO2 eq,4050.552,69.737991,26057.573,2.1495215
+Propane,Frequent,Human carcinogenic toxicity,"kg 1,4-DCB",23454.751,12.747536,4756.6375,0.27651674
+Propane,Frequent,Human non-carcinogenic toxicity,"kg 1,4-DCB",15701.514,58.374,6673.3004,0.50507671
+Propane,Frequent,Ionizing radiation,kBq Co-60 eq,169.20913,0.66597494,261.98017,0.019047604
+Propane,Frequent,Land use,m2a crop eq,176.83302,3.0903799,217.84045,-0.21746666
+Propane,Frequent,Marine ecotoxicity,"kg 1,4-DCB",1606.1651,3.8472209,815.21325,0.047186264
+Propane,Frequent,Marine eutrophication,kg N eq,0.1478144,0.000823148,0.28305642,2.60E-05
+Propane,Frequent,Mineral resource scarcity,kg Cu eq,131.34658,0.1815934,63.081407,0.003053307
+Propane,Frequent,Ozone formation,kg NOx eq,23.0029,0.86269732,101.811151,0.039811456
+Propane,Frequent,Stratospheric ozone depletion,kg CFC11 eq,0.001097109,1.04E-05,0.002130447,7.30E-07
+Propane,Frequent,Terrestrial acidification,kg SO2 eq,22.113605,0.21343569,31.451963,0.009564311
+Propane,Frequent,Terrestrial ecotoxicity,"kg 1,4-DCB",203024.65,1796.6486,264422.74,18.487857
+Propane,Frequent,Water consumption,m3,33.287732,0.12813463,31.440672,0.002099806
+Propane,Moderate,Fine particulate matter formation,kg PM2.5 eq,8.7146443,0.09383631,7.301192,0.004683807
+Propane,Moderate,Fossil resource scarcity,kg oil eq,1829.8474,22.17062,4281.7392,0.59888082
+Propane,Moderate,Freshwater ecotoxicity,"kg 1,4-DCB",1058.5698,1.8533303,198.83646,0.018744891
+Propane,Moderate,Freshwater eutrophication,kg P eq,1.8500337,0.007648736,1.1399597,0.000284129
+Propane,Moderate,Global warming,kg CO2 eq,2829.9681,69.737991,13028.787,2.1495215
+Propane,Moderate,Human carcinogenic toxicity,"kg 1,4-DCB",23161.617,12.747536,2378.3188,0.27651674
+Propane,Moderate,Human non-carcinogenic toxicity,"kg 1,4-DCB",14766.047,58.374,3336.6502,0.50507671
+Propane,Moderate,Ionizing radiation,kBq Co-60 eq,135.28098,0.66597494,130.99009,0.019047604
+Propane,Moderate,Land use,m2a crop eq,146.39012,3.0903799,108.92023,-0.21746666
+Propane,Moderate,Marine ecotoxicity,"kg 1,4-DCB",1524.9586,3.8472209,407.60663,0.047186264
+Propane,Moderate,Marine eutrophication,kg N eq,0.10794917,0.000823148,0.14152821,2.60E-05
+Propane,Moderate,Mineral resource scarcity,kg Cu eq,126.25925,0.1815934,31.540704,0.003053307
+Propane,Moderate,Ozone formation,kg NOx eq,16.568505,0.86269732,50.905575,0.039811456
+Propane,Moderate,Stratospheric ozone depletion,kg CFC11 eq,0.00083463,1.04E-05,0.001065224,7.30E-07
+Propane,Moderate,Terrestrial acidification,kg SO2 eq,19.195823,0.21343569,15.725982,0.009564311
+Propane,Moderate,Terrestrial ecotoxicity,"kg 1,4-DCB",187416.72,1796.6486,132211.37,18.487857
+Propane,Moderate,Water consumption,m3,29.76599,0.12813463,15.720336,0.002099806
+Propane,Rare,Fine particulate matter formation,kg PM2.5 eq,8.0529402,0.09383631,3.650596,0.004683807
+Propane,Rare,Fossil resource scarcity,kg oil eq,1110.7781,22.17062,2140.8696,0.59888082
+Propane,Rare,Freshwater ecotoxicity,"kg 1,4-DCB",1033.645,1.8533303,99.418229,0.018744891
+Propane,Rare,Freshwater eutrophication,kg P eq,1.706326,0.007648736,0.56997984,0.000284129
+Propane,Rare,Global warming,kg CO2 eq,2219.6761,69.737991,6514.3934,2.1495215
+Propane,Rare,Human carcinogenic toxicity,"kg 1,4-DCB",23015.05,12.747536,1189.1594,0.27651674
+Propane,Rare,Human non-carcinogenic toxicity,"kg 1,4-DCB",14298.314,58.374,1668.3251,0.50507671
+Propane,Rare,Ionizing radiation,kBq Co-60 eq,118.3169,0.66597494,65.495043,0.019047604
+Propane,Rare,Land use,m2a crop eq,131.16867,3.0903799,54.460113,-0.21746666
+Propane,Rare,Marine ecotoxicity,"kg 1,4-DCB",1484.3553,3.8472209,203.80331,0.047186264
+Propane,Rare,Marine eutrophication,kg N eq,0.088016559,0.000823148,0.070764105,2.60E-05
+Propane,Rare,Mineral resource scarcity,kg Cu eq,123.71559,0.1815934,15.770352,0.003053307
+Propane,Rare,Ozone formation,kg NOx eq,13.3513075,0.86269732,25.452788,0.039811456
+Propane,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.00070339,1.04E-05,0.000532612,7.30E-07
+Propane,Rare,Terrestrial acidification,kg SO2 eq,17.736932,0.21343569,7.8629908,0.009564311
+Propane,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",179612.76,1796.6486,66105.685,18.487857
+Propane,Rare,Water consumption,m3,28.005119,0.12813463,7.860168,0.002099806
+Sand Battery,Frequent,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.066666431,0.001711432
+Sand Battery,Frequent,Fossil resource scarcity,kg oil eq,443.01006,33.799331,4.4524288,0.21209761
+Sand Battery,Frequent,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,41.626678,0.004858608
+Sand Battery,Frequent,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.018020639,4.60E-05
+Sand Battery,Frequent,Global warming,kg CO2 eq,1807.221,103.00495,21.632866,0.73332382
+Sand Battery,Frequent,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,59.392487,0.098899272
+Sand Battery,Frequent,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,167.99354,0.09454341
+Sand Battery,Frequent,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,3.6628534,0.003751751
+Sand Battery,Frequent,Land use,m2a crop eq,116.4751,7.5518178,17.270958,-0.25308276
+Sand Battery,Frequent,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,51.55291,0.013429166
+Sand Battery,Frequent,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.000672704,6.45E-06
+Sand Battery,Frequent,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,1.0194777,0.001133977
+Sand Battery,Frequent,Ozone formation,kg NOx eq,9.5864754,1.30630477,0.115309683,0.015412777
+Sand Battery,Frequent,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,2.42E-05,2.59E-07
+Sand Battery,Frequent,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.15742589,0.003337895
+Sand Battery,Frequent,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,1319.9786,6.3693035
+Sand Battery,Frequent,Water consumption,m3,30.696253,0.21728166,6.4053781,0.000676099
+Sand Battery,Moderate,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.03335148,0.001711432
+Sand Battery,Moderate,Fossil resource scarcity,kg oil eq,443.01006,33.799331,2.2287674,0.21209761
+Sand Battery,Moderate,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,20.814618,0.004858608
+Sand Battery,Moderate,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.009014577,4.60E-05
+Sand Battery,Moderate,Global warming,kg CO2 eq,1807.221,103.00495,10.827135,0.73332382
+Sand Battery,Moderate,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,29.747932,0.098899272
+Sand Battery,Moderate,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,84.01131,0.09454341
+Sand Battery,Moderate,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,1.832036,0.003751751
+Sand Battery,Moderate,Land use,m2a crop eq,116.4751,7.5518178,8.6371429,-0.25308276
+Sand Battery,Moderate,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,25.779481,0.013429166
+Sand Battery,Moderate,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.000336891,6.45E-06
+Sand Battery,Moderate,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,0.50994211,0.001133977
+Sand Battery,Moderate,Ozone formation,kg NOx eq,9.5864754,1.30630477,0.057715008,0.015412777
+Sand Battery,Moderate,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,1.21E-05,2.59E-07
+Sand Battery,Moderate,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.078749472,0.003337895
+Sand Battery,Moderate,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,661.14529,6.3693035
+Sand Battery,Moderate,Water consumption,m3,30.696253,0.21728166,3.2532765,0.000676099
+Sand Battery,Rare,Fine particulate matter formation,kg PM2.5 eq,5.6428355,0.14392575,0.016694004,0.001711432
+Sand Battery,Rare,Fossil resource scarcity,kg oil eq,443.01006,33.799331,1.1169367,0.21209761
+Sand Battery,Rare,Freshwater ecotoxicity,"kg 1,4-DCB",553.39196,2.5682468,10.408587,0.004858608
+Sand Battery,Rare,Freshwater eutrophication,kg P eq,1.422035,0.011198855,0.004511545,4.60E-05
+Sand Battery,Rare,Global warming,kg CO2 eq,1807.221,103.00495,5.4242691,0.73332382
+Sand Battery,Rare,Human carcinogenic toxicity,"kg 1,4-DCB",3271.7274,17.97543,14.925654,0.098899272
+Sand Battery,Rare,Human non-carcinogenic toxicity,"kg 1,4-DCB",8991.6474,83.808322,42.020193,0.09454341
+Sand Battery,Rare,Ionizing radiation,kBq Co-60 eq,112.53748,1.0909643,0.91662733,0.003751751
+Sand Battery,Rare,Land use,m2a crop eq,116.4751,7.5518178,4.3202357,-0.25308276
+Sand Battery,Rare,Marine ecotoxicity,"kg 1,4-DCB",945.16407,5.568109,12.892767,0.013429166
+Sand Battery,Rare,Marine eutrophication,kg N eq,0.31978129,0.001231894,0.000168984,6.45E-06
+Sand Battery,Rare,Mineral resource scarcity,kg Cu eq,102.14293,0.25206397,0.2551743,0.001133977
+Sand Battery,Rare,Ozone formation,kg NOx eq,9.5864754,1.30630477,0.028917671,0.015412777
+Sand Battery,Rare,Stratospheric ozone depletion,kg CFC11 eq,0.00051693,1.63E-05,6.05E-06,2.59E-07
+Sand Battery,Rare,Terrestrial acidification,kg SO2 eq,13.711818,0.31864039,0.039411264,0.003337895
+Sand Battery,Rare,Terrestrial ecotoxicity,"kg 1,4-DCB",229895.61,2938.1213,331.72862,6.3693035
+Sand Battery,Rare,Water consumption,m3,30.696253,0.21728166,1.6772257,0.000676099

@@ -33,17 +33,14 @@ def show():
     if impact_category == "Carbon Footprint":
         PATH = f"./data/GWP100.csv"
     elif impact_category == "ReCiPe Midpoint H":
-        PATH = f"./data/ReCiPe-Endpoint.csv"
+        PATH = f"./data/ReCiPe-Midpoint.csv"
     else:
         PATH = f"./data/ReCiPe-Endpoint.csv"
     df = pd.read_csv(PATH)  # Save data frame from assigned path
 
     # Plot the charts
     phases = ["Materials & Mfg", "Transport", "Use", "End-of-Life"]
-    midpoints = ["Climate Change", "Ozone Depletion", "Human Toxicity", 
-                 "Particulate Matter", "Ionizing Radiation", "Photochemical Oxidant Formation", 
-                 "Terrestrial Acidification", "Freshwater Eutrophication", "Marine Eutrophication", 
-                 "Terrestrial Ecotoxicity", "Freshwater Ecotoxicity", "Marine Ecotoxicity"]
+    midpoints = pd.read_csv("./data/Midpoints.csv")['Midpoint'].tolist()
     units = "kg CO2e" if impact_category == "Carbon Footprint" else "Points"
     col2.subheader(f"{impact_category}")
 
@@ -55,12 +52,18 @@ def show():
     else:        
         df = df[df['Outage'] == 'Frequent']
     
+    # Save separate dataframe for endpoints that sum all midpoints down to one score for each system
+    # Sum all midpoint categories for each system to get single endpoint scores
+    df_endpoint = df.groupby('System')[phases].sum().reset_index()
+    print("Endpoint scores (sum of all midpoints by system):")
+    print(df_endpoint)
 
     #  Modifications if relative results is selected
     if relative_results:
         bar_mode = "relative"
         units = "%"
         df[phases] = df[phases].div(df[phases].sum(axis=1), axis=0) * 100
+        df_endpoint[phases] = df_endpoint[phases].div(df_endpoint[phases].sum(axis=1), axis=0) * 100
     else:
         bar_mode = "stack"
 
@@ -75,13 +78,11 @@ def show():
         col2.plotly_chart(fig)
 
     elif impact_category == "ReCiPe Endpoint H":
-        # fig1 = px.bar(df, x='Midpoint', y=phases, color='System', 
-        #               barmode='group', orientation='v',
-        #               title="Comparison of Systems")
-        fig1 = px.bar(df, x='System', y=phases, barmode=bar_mode,   
+        # Plot single score results
+        fig1 = px.bar(df_endpoint, x='System', y=phases, barmode=bar_mode,
                      title="Comparison of Systems (single score)")
-        # fig = px.bar(df, y='Midpoint', x=phases, color='System', barmode='group', orientation='h')
-
+        
+        # Plot midpoint results for each system
         fig2 = px.bar(df[df['System'] == 'Sand Battery'], 
                       x='Midpoint', y=phases, barmode=bar_mode,
                       title="Sand Battery (endpoint breakdown by midpoint categories)")
@@ -108,13 +109,28 @@ def show():
         col2.plotly_chart(fig3)
         col2.plotly_chart(fig4)
     else:
-        fig = px.bar(df, x='Midpoint', y=phases, barmode=bar_mode,
+        # Select a midpoint category
+        with col2:
+            midpoint_category = st.selectbox("Select a midpoint category to display:", midpoints, index=0)
+
+        # Filter the data to only show bar charts for the selected midpoint category
+        df_midpoint = df[df['Midpoint'] == midpoint_category]
+        # Set units based on the selection
+        units = df_midpoint['Unit'].iloc[0]
+        # Plot bar charts for all three systems for the selected midpoint category
+        fig = px.bar(df_midpoint, x='System', y=phases, barmode=bar_mode,
                      title="Comparison of Systems")
-        fig.update_layout(yaxis_title=units, legend_title=None)
+        fig.update_layout(yaxis_title= "%" if relative_results else units, legend_title=None)
         fig.update_layout(font=dict(family="Arial", size=26, color="black"))
-        
+
         # Display chart
         col2.plotly_chart(fig)
+        st.divider() # Divider for better visual separation
+        # Add all data for each system as a table
+        col2.subheader(f"Data for all midpoints and all systems")
+        # Save a df_display that has "System" as the index and removes the "Outage" column
+        df_display = df.drop(columns=['Outage']).set_index('System')
+        col2.table(df_display)
 
     st.divider()
     st.subheader("Selected Options")
