@@ -21,8 +21,8 @@ st.warning(":building_construction: We are working on this page. Stay tuned.")
 from tabs import tab1, tab2, tab3
 t1, t2, t3 = st.tabs(["Analysis Tool", "Supporting Details", "Inventory Data"])
 
-with t1:
-    tab1.show()
+# with t1:
+    # tab1.show()
 
 with t2:
     tab2.show()
