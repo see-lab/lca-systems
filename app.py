@@ -21,11 +21,25 @@ st.warning(":building_construction: We are working on this page. Stay tuned.")
 from tabs import tab1, tab2, tab3
 t1, t2, t3 = st.tabs(["Analysis Tool", "Supporting Details", "Inventory Data"])
 
-# with t1:
-    # tab1.show()
+with t1:
+    tab1.show()
 
 with t2:
     tab2.show()
 
 with t3:
     tab3.show()
+
+# SimaPro project
+# Project Name: EnergyStorage
+# Structure
+# Product stages
+    # > "Subs" -- ["Materials & Mfg", "Transport", "Use", "End-of-Life"]
+    #             [BESS_Production, BESS_Use, etc.]
+    # > [folder name] -- [BESS, Sand, Propane]
+
+# LCIA Running [BESS, Sand, Propane] with various methods
+
+# Create a csv for each system [BESS, Sand, Propane] for inventory
+# Stage, Item, Inventory Selection, Inventory UID, Quantity, Unit
+# Mgf, Copper, [long name], ####, 100, kg
