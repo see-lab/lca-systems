@@ -92,7 +92,7 @@ def show():
                 "icon": "🔥",
                 "description": "Chemical energy storage using propane combustion for heating",
                 "pros": ["High energy density", "Reliable technology", "Quick deployment"],
-                "cons": ["Direct emissions", "Fossil fuel & supply dependence", "High usage costs"]
+                "cons": ["Direct emissions", "Fossil fuel dependence", "High usage costs"]
             }
         }
         
