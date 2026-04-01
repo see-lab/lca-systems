@@ -382,9 +382,10 @@ def show():
     # Add interactive challenge
     st.subheader("🎯 Try This Challenge!")
     challenge_options = [
-        "Challenge 1",
-        "Challenge 2",
-        "Challenge 3",
+        "Complete the comparative analysis table for moderate outage scenario",
+        "Rank the top 3 midpoint categories for each system using ReCiPe Endpoint",
+        "Explore how outage frequency affects system rankings",
+        "Compare system performance across different impact methods",
         "Determine when the 'Use' phase becomes significant"
     ]
     selected_challenge = st.selectbox("Pick a challenge to explore:", 
