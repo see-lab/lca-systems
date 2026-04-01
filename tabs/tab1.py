@@ -17,8 +17,8 @@ def show():
         with st.expander("📚 Learning Objectives", expanded=False):
             st.markdown("""
             **After using this tool, you will be able to:**
-            - Analyze and compare multi-category LCIA outputs for alternative technologies, identifying dominant impact drivers and explaining tradeoffs.
-            - Evaluate LCIA results for real‑world engineering decisions, articulating modeling limitations and identifying areas for further analysis.
+            - Analyze and compare multi-category LCIA outputs for alternative technologies.
+            - Evaluate LCIA results for systems engineering decisions, articulating modeling limitations and identifying areas for further analysis.
             - Determine the extent to which assumptions and uncertainty influence comparative technology rankings. 
             - Justify whether conclusions are robust or dependent on methodological choices.
             """)
@@ -267,7 +267,7 @@ def show():
             # Calculate dominant phase for endpoint
             phase_totals = df_endpoint[phases].sum()
             dominant_phase = phase_totals.idxmax()
-            st.metric("🔍 Key Phase", dominant_phase,
+            st.metric("🔍 Key Phase (all systems)", dominant_phase,
                      f"{(phase_totals[dominant_phase]/phase_totals.sum()*100):.0f}% of total")
         
         col2.divider() # Divider for better visual separation
