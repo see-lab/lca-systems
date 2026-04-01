@@ -129,69 +129,68 @@ def show():
         st.image("img/sand.png", caption="Sand Battery")
 
     # Enhanced acknowledgements with interactive elements
-    st.subheader("🙏 Acknowledgements & Resources", divider=True)
+    st.subheader("🙏 Acknowledgements", divider=True)
     
-    col_ack1, col_ack2 = st.columns([2, 1])
+    # col_ack1, col_ack2 = st.columns([2, 1])
+    # with col_ack1:
+    st.write('''**Funding:** The development of this educational module was supported by the U.S. 
+            National Science Foundation under Grant CBET-2501735. Any opinions, 
+            findings, and conclusions or recommendations expressed in this material 
+            are those of the authors and do not necessarily reflect the views of the 
+            National Science Foundation.''')
     
-    with col_ack1:
-        st.write('''**Funding:** The development of this educational module was supported by the U.S. 
-                National Science Foundation under Grant CBET-2501735. Any opinions, 
-                findings, and conclusions or recommendations expressed in this material 
-                are those of the authors and do not necessarily reflect the views of the 
-                National Science Foundation.''')
-        
-        st.write('''**AI Statement:** The design of this interactive educational module 
-                was enhanced with assistance from AI tools (Claude Sonnet 4) for code development, user interface design, 
-                and documentation. All educational content, data analysis, and LCA processes were
-                conceptualized, performed, and validated by the human authors.''')
-        
-        # Add learning resources
-        st.markdown("#### 📚 Additional Learning Resources")
-        
-        resources = [
-            ("📖 ISO 14040 LCA Principles", "https://www.iso.org/standard/37456.html"),
-            ("📊 ReCiPe Methodology", "https://www.rivm.nl/en/life-cycle-assessment-lca/recipe"),
-            ("🌐 IPCC GWP Methodology", "https://www.ipcc.ch/report/ar6/wg3/"),
-            ("🎓 LCA Resources", "https://venturewell.org/tools_for_design/measuring-sustainability/life-cycle-assessment-content/"),
-            ("⚡ Energy Storage Technologies", "https://eta.lbl.gov/storage"),
-            ("🏖 Sand Batteries in Action", "https://polarnightenergy.com/news/what-is-thermal-energy-storage/")
-        ]
-        
-        for title, url in resources:
-            st.markdown(f"[{title}]({url})")
+    st.write('''**AI Statement:** The design of this interactive educational module 
+            was enhanced with assistance from AI tools (Claude Sonnet 4) for code development, user interface design, 
+            and documentation. All educational content, data analysis, and LCA processes were
+            conceptualized, performed, and validated by the human authors.''')
     
-    with col_ack2:
-        # Add interactive feedback form
-        st.markdown("#### 💬 Feedback")
+    # Add learning resources
+    st.subheader("📚 Additional Learning Resources", divider=True)
+    
+    resources = [
+        ("📖 ISO 14040 LCA Principles", "https://www.iso.org/standard/37456.html"),
+        ("📊 ReCiPe Methodology", "https://www.rivm.nl/en/life-cycle-assessment-lca/recipe"),
+        ("🌐 IPCC GWP Methodology", "https://www.ipcc.ch/report/ar6/wg3/"),
+        ("🎓 LCA Resources", "https://venturewell.org/tools_for_design/measuring-sustainability/life-cycle-assessment-content/"),
+        ("⚡ Energy Storage Technologies", "https://eta.lbl.gov/storage"),
+        ("🏖 Sand Batteries in Action", "https://polarnightenergy.com/news/what-is-thermal-energy-storage/")
+    ]
+    
+    for title, url in resources:
+        st.markdown(f"[{title}]({url})")
+    
+    # with col_ack2:
+    #     # Add interactive feedback form
+    #     st.markdown("#### 💬 Feedback")
         
-        with st.form("feedback_form"):
-            rating = st.slider("How helpful is this tool?", 1, 5, 3)
-            feedback = st.text_area("Suggestions for improvement:")
-            submitted = st.form_submit_button("Submit Feedback")
+    #     with st.form("feedback_form"):
+    #         rating = st.slider("How helpful is this tool?", 1, 5, 3)
+    #         feedback = st.text_area("Suggestions for improvement:")
+    #         submitted = st.form_submit_button("Submit Feedback")
             
-            if submitted:
-                # Save feedback to a file
-                import datetime
-                import os
+    #         if submitted:
+    #             # Save feedback to a file
+    #             import datetime
+    #             import os
                 
-                # Create feedback directory if it doesn't exist
-                feedback_dir = "feedback"
-                if not os.path.exists(feedback_dir):
-                    os.makedirs(feedback_dir)
+    #             # Create feedback directory if it doesn't exist
+    #             feedback_dir = "feedback"
+    #             if not os.path.exists(feedback_dir):
+    #                 os.makedirs(feedback_dir)
                 
-                # Create feedback entry with timestamp
-                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                feedback_entry = f"Timestamp: {timestamp}\nRating: {rating}/5\nFeedback: {feedback}\n{'='*50}\n\n"
+    #             # Create feedback entry with timestamp
+    #             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    #             feedback_entry = f"Timestamp: {timestamp}\nRating: {rating}/5\nFeedback: {feedback}\n{'='*50}\n\n"
                 
-                # Append to feedback file
-                feedback_file = os.path.join(feedback_dir, "user_feedback.txt")
-                try:
-                    with open(feedback_file, "a", encoding="utf-8") as f:
-                        f.write(feedback_entry)
-                    st.success("Thank you for your feedback! 🎉 Your response has been saved.")
-                except Exception as e:
-                    st.success("Thank you for your feedback! 🎉")
-                    st.error(f"Note: Could not save to file ({str(e)})")
+    #             # Append to feedback file
+    #             feedback_file = os.path.join(feedback_dir, "user_feedback.txt")
+    #             try:
+    #                 with open(feedback_file, "a", encoding="utf-8") as f:
+    #                     f.write(feedback_entry)
+    #                 st.success("Thank you for your feedback! 🎉 Your response has been saved.")
+    #             except Exception as e:
+    #                 st.success("Thank you for your feedback! 🎉")
+    #                 st.error(f"Note: Could not save to file ({str(e)})")
                 
-                if rating >= 4:
-                    st.balloons()
+    #             if rating >= 4:
+    #                 st.balloons()
