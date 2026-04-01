@@ -18,7 +18,7 @@ def show():
                     from a environmental perspective.
                     ''')
         
-        st.markdown("### ⚠️ Disclaimer!")
+        st.markdown("#### ⚠️ Disclaimer!")
         st.warning("""This module is designed for **educational purposes** to 
                    illustrate how LCA results can inform engineering design decisions.
                    While care has been taken to ensure data accuracy, the results are 
