@@ -7,7 +7,7 @@ import streamlit as st
 
 # Configure page
 st.set_page_config(
-    page_title="LCA Systems Workshop", 
+    page_title="LCIA Systems Workshop", 
     layout="wide",
     page_icon="🌍",
     initial_sidebar_state="expanded"
@@ -17,7 +17,7 @@ st.set_page_config(
 col_title1, col_title2 = st.columns([3, 1])
 
 with col_title1:
-    st.title("🌍 Life Cycle Assessment of Systems Module")
+    st.title("🌍 Life Cycle Impact Assessment of Systems")
     st.header("⚡ Residential Storage Systems for Resilient Heating")
     st.markdown("**👥 Authors:** Kathryn Hinkelman & Anastasija Mensikova, University of Vermont")
     st.markdown("**📅 Version 1.0 alpha:** April 2, 2026")
