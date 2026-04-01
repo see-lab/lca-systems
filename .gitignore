@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 venv/
 staging/
+supporting-docs/
+
+# Other files
+.DS_Store
