@@ -80,19 +80,19 @@ def show():
                 "icon": "🔋",
                 "description": "Electrochemical energy storage using lithium-ion batteries",
                 "pros": ["High efficiency", "Fast response", "Mature technology"],
-                "cons": ["Limited lifespan", "Resource intensive", "Performance degradation"]
+                "cons": ["Fire safety risk", "Resource intensive", "High capital costs"]
             },
             "Sand Battery": {
                 "icon": "🏖️",
                 "description": "Thermal energy storage using heated sand as storage medium",
                 "pros": ["Long lifespan", "Abundant materials", "Low maintenance"],
-                "cons": ["Lower efficiency", "Heat losses", "Slower response"]
+                "cons": ["Lower efficiency", "Large footprint", "Novel technology"]
             },
             "Propane": {
                 "icon": "🔥",
                 "description": "Chemical energy storage using propane combustion for heating",
                 "pros": ["High energy density", "Reliable technology", "Quick deployment"],
-                "cons": ["Direct emissions", "Fossil fuel dependence", "Safety considerations"]
+                "cons": ["Direct emissions", "Fossil fuel & supply dependence", "High usage costs"]
             }
         }
         
