@@ -7,27 +7,76 @@ import plotly.express as px
 from plotly.subplots import make_subplots as sp
 
 def show():
-    # Main content
-    st.header("Impact Analysis Tool", divider=True)
+    # Main content with progress indicator
+    col_header1, col_header2 = st.columns([3, 1])
+    
+    with col_header1:
+        st.header("🔬 Impact Analysis Tool", divider=True)
+
+        # Add learning objectives
+        with st.expander("📚 Learning Objectives", expanded=False):
+            st.markdown("""
+            **After using this tool, you will be able to:**
+            - Analyze and compare multi-category LCIA outputs for alternative technologies, identifying dominant impact drivers and explaining tradeoffs.
+            - Evaluate LCIA results for real‑world engineering decisions, articulating modeling limitations and identifying areas for further analysis.
+            - Determine the extent to which assumptions and uncertainty influence comparative technology rankings. 
+            - Justify whether conclusions are robust or dependent on methodological choices.
+            """)
+    
+    with col_header2:
+        # Initialize session state for tracking exploration
+        if 'explorations' not in st.session_state:
+            st.session_state.explorations = set()
+        
+        # Show exploration counter
+        explored = len(st.session_state.explorations)
+        progress = min(explored / 10, 1.0)
+        
+        st.metric("🎯 Exploration Progress", 
+                 f"{min(explored, 10)}/10", 
+                 f"{progress*100:.0f}% Complete")
+        
+        if progress >= 1.0:
+            st.success("🏆 Expert Explorer!")
+
 
     # Add columns
     col1, col2 = st.columns([1,4])
 
     # Column 1: Selection options
     with col1:
-        st.subheader("Select Analysis Options")
+        st.subheader("🎯 Select Analysis Options")
 
-        impact_category = st.selectbox("Choose an impact method:", 
-            ["Carbon Footprint", "ReCiPe Endpoint H", "ReCiPe Midpoint H"])
+        impact_category = st.selectbox("🔬 Choose an impact method:", 
+            ["Carbon Footprint", "ReCiPe Endpoint H", "ReCiPe Midpoint H"],
+            help="Different methods capture different environmental concerns. Start with Carbon Footprint for climate impacts!")
 
-        outage_frequency = st.selectbox("Choose an outage frequency:", 
+        outage_frequency = st.selectbox("⚡ Choose an outage frequency scenario:", 
             ["Rare (5x/year)", "Moderate outages (10x/yr)", "Frequent outages (20x/yr)", "Regular heating use (85x/yr)"],
-            index=1)
+            index=1,
+            help="How often will the storage system be used? This affects the 'Use' phase impacts.")
 
-        relative_results = st.checkbox("Scale plots to relative values?",value=False)
+        relative_results = st.checkbox("📊 Scale plots to relative values?", value=False,
+                                     help="Convert to percentages for easier comparison across impact categories with different units.")
+        
+        # Add interactive tip
+        if not relative_results and impact_category == "ReCiPe Midpoint H":
+            st.info("💡 **Tip**: Try enabling relative scaling when comparing midpoint categories!")
 
-        st.warning(":building_construction: Add Weighting Factors.")
-
+        # Add quick insights section
+        with st.expander("🧠 Quick Insights", expanded=False):
+            if impact_category == "Carbon Footprint":
+                st.write("🌍 **Focus**: Climate change impacts from greenhouse gas emissions")
+                st.write(" * **Problem**-level")
+                st.write(" * **Single** impact category")
+            elif impact_category == "ReCiPe Endpoint H":
+                st.write("🎯 **Focus**: Single-score environmental impacts")
+                st.write(" * **Damage**-level")
+                st.write(" * **Multiple** impact categories")           
+            else:
+                st.write("🔍 **Focus**: Detailed breakdown of specific environmental impact types")
+                st.write(" * **Problem**-level")
+                st.write(" * **Multiple** impact categories") 
 
     # Save the path based on impact category selected.
     if impact_category == "Carbon Footprint":
@@ -37,6 +86,12 @@ def show():
     else:
         PATH = f"./data/ReCiPe-Endpoint.csv"
     df = pd.read_csv(PATH)  # Save data frame from assigned path
+
+    # Track exploration progress
+    current_selection = f"{impact_category}_{outage_frequency}_{relative_results}"
+    if 'explorations' not in st.session_state:
+        st.session_state.explorations = set()
+    st.session_state.explorations.add(current_selection)
 
     # Plot the charts
     phases = ["Materials & Mfg", "Transport", "Use", "End-of-Life"]
@@ -70,12 +125,46 @@ def show():
     # Plotly charts (GWP, midpoints, and endpoints)
     if impact_category == "Carbon Footprint":
         fig = px.bar(df, x='System', y=phases, barmode=bar_mode,
-                     title="Comparison of Systems")
-        fig.update_layout(yaxis_title=units, legend_title=None)
-        fig.update_layout(font=dict(family="Arial", size=26, color="black"))
+                     title="🌍 Carbon Footprint Comparison",
+                     color_discrete_sequence=px.colors.qualitative.Set2)
+        fig.update_layout(
+            yaxis_title=units, 
+            legend_title="Lifecycle Phases",
+            font=dict(family="Arial", size=14, color="black"),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)'
+        )
+        # Add hover information
+        fig.update_traces(
+            hovertemplate="<b>%{x}</b><br>" +
+                         "Phase: %{fullData.name}<br>" +
+                         "Impact: %{y:.2f} " + units + "<br>" +
+                         "<extra></extra>"
+        )
 
         # Display chart
-        col2.plotly_chart(fig)
+        col2.plotly_chart(fig, use_container_width=True)
+        
+        # Add quick insights below chart
+        col2_1, col2_2, col2_3 = col2.columns(3)
+        
+        # Calculate which system is best
+        total_impacts = df.groupby('System')[phases].sum().sum(axis=1)
+        best_system = total_impacts.idxmin()
+        worst_system = total_impacts.idxmax()
+        
+        with col2_1:
+            st.metric("🏆 Best System", best_system, 
+                     f"{total_impacts[best_system]:.0f} {units}")
+        with col2_2:
+            st.metric("📈 Highest Impact", worst_system,
+                     f"{total_impacts[worst_system]:.0f} {units}")
+        with col2_3:
+            # Calculate dominant phase
+            phase_totals = df[phases].sum()
+            dominant_phase = phase_totals.idxmax()
+            st.metric("🔍 Key Phase", dominant_phase,
+                     f"{(phase_totals[dominant_phase]/phase_totals.sum()*100):.0f}% of total")
 
     elif impact_category == "ReCiPe Endpoint H":
         # Plot single score results
@@ -104,7 +193,7 @@ def show():
 
         # Display vertically
         col2.plotly_chart(fig1)
-        st.divider # Divider for better visual separation
+        col2.divider() # Divider for better visual separation
         col2.plotly_chart(fig2)
         col2.plotly_chart(fig3)
         col2.plotly_chart(fig4)
@@ -133,6 +222,60 @@ def show():
         # col2.table(df_display)
 
     st.divider()
-    st.subheader("Selected Options")
-    st.write("Impact Method:", impact_category)
-    st.write("Outage Frequency:", outage_frequency)
+    
+    # Enhanced results section with interpretation
+    col_results1, col_results2 = st.columns([2, 1])
+    
+    with col_results1:
+        st.subheader("📋 Analysis Summary")
+        st.write("**Impact Method:** ", impact_category)
+        st.write("**Outage Scenario:** ", outage_frequency)
+        st.write("**Display Mode:** ", "Relative (%)" if relative_results else "Absolute Values")
+    
+    with col_results2:
+        st.subheader("🤔 Discussion Questions")
+        with st.expander("Think About This...", expanded=False):
+            st.markdown("""
+            - Which system performs best for this impact method?
+            - Which lifecycle phase has the largest impact?
+            - How do your results change with different scenarios?
+            - What design improvements would you recommend?
+            """)
+    
+    # Add interpretation based on current selection
+    st.subheader("🔍 What Do These Results Mean?")
+    
+    if impact_category == "Carbon Footprint":
+        st.info("""
+        **Climate Impact Perspective**: Lower values = better for climate change.
+        The 'Materials & Mfg' phase often dominates for batteries due to energy-intensive production.
+        The 'Use' phase varies greatly depending on how clean the electricity grid is.
+        """)
+    elif impact_category == "ReCiPe Endpoint H":
+        st.info("""
+        **Comprehensive Environmental View**: This combines multiple impact types into single scores.
+        Look at both the overall comparison AND the breakdown by impact categories.
+        Different systems may excel in different environmental areas.
+        Consider enabling relative scaling to see details within each impact category.
+        """)
+    else:
+        st.info("""
+        **Detailed Impact Analysis**: Each midpoint category represents a specific environmental concern (i.e., problem).
+        Use this to identify which environmental impacts matter most for each system.
+        Consider enabling relative scaling to compare across different impact types.
+        """)
+        
+    # Add interactive challenge
+    st.subheader("🎯 Try This Challenge!")
+    challenge_options = [
+        "Challenge 1",
+        "Challenge 2",
+        "Challenge 3",
+        "Determine when the 'Use' phase becomes significant"
+    ]
+    selected_challenge = st.selectbox("Pick a challenge to explore:", 
+                                    ["Select a challenge..."] + challenge_options)
+    
+    if selected_challenge != "Select a challenge...":
+        st.success(f"🚀 **Challenge**: {selected_challenge}")
+        st.markdown("*Use the controls above to explore and find your answer!*")

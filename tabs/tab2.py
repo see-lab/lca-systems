@@ -2,41 +2,169 @@
 import streamlit as st
 
 def show():
-        # Short description block
-    st.header("Overview", divider=True)
+    # Short description block
+    st.header("🌍 Overview", divider=True)
 
     # Add columns
     col1, col2 = st.columns([2,1])
 
     # Text description
     with col1:
-        st.markdown("### Problem Set Up")
+        st.markdown("### 🎯 Problem Set Up")
         st.markdown('''This module focuses on the life cycle assessment of residential 
                     storage systems, particularly for resilient heating solutions.
-                    The goal is to compare two alternative storage technologies: (1) battery energy storage system (BESS) and 
+                    The goal is to compare three alternative storage technologies: (1) battery energy storage system (BESS), 
                     (2) a thermal storage system (silica sand, i.e., a "sand battery").
                     ''')
-        st.markdown("- **Goal:** Estimate biggest impacts to set design priorities.")
-        st.markdown("- **Functional Unit:** 200 kWh energy stored with a 15-year lifetime (3-day-long outages, 6 outages/year).")
-        st.markdown("- **System Boundary:** Scope 3 cradle-to-grave (materials & mfg, transport, & end of life).")
-        st.markdown("- **Impact Units:** Several options (see drop down below).")
-        st.markdown("### Questions to Consider")
-        st.markdown("This tool analyzes the environmental impacts from each system under various impact scenarios to understand:")
-        st.markdown("- How does environmental impact methods change the perception of each alternate's performance?")
-        st.markdown("- What are the key impact drivers for each system?")
-        # st.markdown("- How do the results vary across different locations (e.g., due to differences in electricity grid mix)?")
-        st.markdown("- How do the results inform design priorities for improving the sustainability of these systems?")
+        
+        st.markdown("### ⚠️ Disclaimer!")
+        st.warning("""This module is designed for **educational purposes** to 
+                   illustrate how LCA results can inform engineering design decisions.
+                   While care has been taken to ensure data accuracy, the results are 
+                   based on simplified models and assumptions, which do not capture the full complexity
+                   and usage scenarios of real-world energy storage systems and applications.
+                   These results are not intended to be used for commercial, policy, or engineering technology 
+                   decisions without further analysis and validation.
+                   """)
+        
+        # Interactive elements
+        st.markdown("#### 🔑 Key Study Parameters")
+        
+        col1a, col1b = st.columns(2)
+        
+        with col1a:
+            st.info("""
+            **🎯 Goal:** Estimate biggest impacts to set design priorities
+            
+            **⚖️ Functional Unit:** 200 kWh energy discharged from storage during use over a 15-year lifetime
+            
+            **🔄 System Boundary:** Cradle-to-grave analysis
+            """)
+            
+        with col1b:
+            st.success("""
+            **📊 Impact Methods:** Multiple environmental indicators
+            
+            **⚡ Scenarios:** Variable outage frequencies
+            
+            **🎛️ Analysis:** Absolute & relative comparisons
+            """)
+            
+        st.markdown("### 🤔 Critical Thinking Questions")
+        
+        questions = [
+            "How does environmental impact method change perception of system performance?",
+            "What are the key impact drivers for each system?",
+            "How do results inform design priorities for improving sustainability?",
+            "Which factors might vary by geographic location?"
+        ]
+        
+        for i, question in enumerate(questions, 1):
+            with st.expander(f"Question {i}: {question}", expanded=False):
+                user_response = st.text_area(f"Your thoughts on Question {i}:", 
+                                           key=f"question_{i}",
+                                           placeholder="Share your analysis here...")
+                if user_response:
+                    st.write("💭 Great thinking! Discuss with your classmates.")
 
     # System boundary image
     with col2:
-        st.image("img/placeholder.png", caption="System boundaries (a) and (b).")
-        # Add dog image
-        # st.image("https://static.streamlit.io/examples/dog.jpg")
+        st.image("img/placeholder.png", caption="System boundaries visualization")
+        
+        # Add system comparison table
+        st.markdown("#### ⚖️ System Comparison")
+        
+        comparison_data = {
+            "Feature": ["Energy Type", "Storage Medium", "Efficiency", "Scalability"],
+            "BESS": ["Electrochemical", "Lithium Batteries", "~85-95%", "Modular"],
+            "Sand Battery": ["Thermal", "Silica Sand", "~50-70%", "Flexible"],
+            "Propane": ["Chemical", "Propane Gas", "~80-90%", "Tank-based"]
+        }
+        
+        st.table(comparison_data)
+        
+        # Interactive system selector
+        st.markdown("#### 🔍 Learn More About Systems")
+        
+        selected_system = st.selectbox(
+            "Select a system to explore:",
+            ["Choose a system...", "BESS", "Sand Battery", "Propane"]
+        )
+        
+        system_details = {
+            "BESS": {
+                "icon": "🔋",
+                "description": "Electrochemical energy storage using lithium-ion batteries",
+                "pros": ["High efficiency", "Fast response", "Mature technology"],
+                "cons": ["Limited lifespan", "Resource intensive", "Performance degradation"]
+            },
+            "Sand Battery": {
+                "icon": "🏖️",
+                "description": "Thermal energy storage using heated sand as storage medium",
+                "pros": ["Long lifespan", "Abundant materials", "Low maintenance"],
+                "cons": ["Lower efficiency", "Heat losses", "Slower response"]
+            },
+            "Propane": {
+                "icon": "🔥",
+                "description": "Chemical energy storage using propane combustion for heating",
+                "pros": ["High energy density", "Reliable technology", "Quick deployment"],
+                "cons": ["Direct emissions", "Fossil fuel dependence", "Safety considerations"]
+            }
+        }
+        
+        if selected_system in system_details:
+            details = system_details[selected_system]
+            st.markdown(f"**{details['icon']} {selected_system}**")
+            st.write(details["description"])
+            
+            col_pros, col_cons = st.columns(2)
+            with col_pros:
+                st.markdown("**✅ Advantages:**")
+                for pro in details["pros"]:
+                    st.write(f"• {pro}")
+            
+            with col_cons:
+                st.markdown("**⚠️ Challenges:**")
+                for con in details["cons"]:
+                    st.write(f"• {con}")
 
-    # Acknowledgements
-    st.subheader("Acknowledgements", divider=True)
-    st.write('''The development of this educational module was supported by the U.S. 
-            National Science Foundation under Grant CBET-2501735. Any opinions, 
-            findings, and conclusions or recommendations expressed in this material 
-            are those of the authors and do not necessarily reflect the views of the 
-            National Science Foundation.''')
+    # Enhanced acknowledgements with interactive elements
+    st.subheader("🙏 Acknowledgements & Resources", divider=True)
+    
+    col_ack1, col_ack2 = st.columns([2, 1])
+    
+    with col_ack1:
+        st.write('''The development of this educational module was supported by the U.S. 
+                National Science Foundation under Grant CBET-2501735. Any opinions, 
+                findings, and conclusions or recommendations expressed in this material 
+                are those of the authors and do not necessarily reflect the views of the 
+                National Science Foundation.''')
+        
+        # Add learning resources
+        st.markdown("#### 📚 Additional Learning Resources")
+        
+        resources = [
+            ("📖 ISO 14040 LCA Principles", "https://www.iso.org/standard/37456.html"),
+            ("📊 ReCiPe Methodology", "https://www.rivm.nl/en/life-cycle-assessment-lca/recipe"),
+            ("📊 IPCC GWP Methodology", "https://www.ipcc.ch/report/ar6/wg3/"),
+            ("🎓 LCA Resources", "https://venturewell.org/tools_for_design/measuring-sustainability/life-cycle-assessment-content/"),
+            ("⚡ Energy Storage Technologies", "https://eta.lbl.gov/storage"),
+            ("🏖 Sand Batteries in Action", "https://polarnightenergy.com/news/what-is-thermal-energy-storage/")
+        ]
+        
+        for title, url in resources:
+            st.markdown(f"[{title}]({url})")
+    
+    with col_ack2:
+        # Add interactive feedback form
+        st.markdown("#### 💬 Feedback")
+        
+        with st.form("feedback_form"):
+            rating = st.slider("How helpful is this tool?", 1, 5, 3)
+            feedback = st.text_area("Suggestions for improvement:")
+            submitted = st.form_submit_button("Submit Feedback")
+            
+            if submitted:
+                st.success("Thank you for your feedback! 🎉")
+                if rating >= 4:
+                    st.balloons()
