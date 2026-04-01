@@ -18,7 +18,7 @@ def show():
             st.markdown("""
             **After using this tool, you will be able to:**
             - Analyze and compare multi-category LCIA outputs for alternative technologies.
-            - Evaluate LCIA results for systems engineering decisions, articulating modeling limitations and identifying areas for further analysis.
+            - Evaluate LCIA results for systems engineering decisions, considering modeling limitations and subsequential areas for analysis.
             - Determine the extent to which assumptions and uncertainty influence comparative technology rankings. 
             - Justify whether conclusions are robust or dependent on methodological choices.
             """)
