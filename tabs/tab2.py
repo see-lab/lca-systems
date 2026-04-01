@@ -38,39 +38,22 @@ def show():
             
             **⚖️ Functional Unit:** 200 kWh energy discharged from storage during use over a 15-year lifetime
             
-            **🔄 System Boundary:** Cradle-to-grave analysis
+            **🔄 System Boundary:** Cradle-to-grave analysis, including transport (to Vermont)
             """)
             
         with col1b:
             st.success("""
+            **📋 Software & Data:** SimaPro 9.3, Ecoinvent 3.9
+            
             **📊 Impact Methods:** Multiple environmental indicators
             
             **⚡ Scenarios:** Variable outage frequencies
             
             **🎛️ Analysis:** Absolute & relative comparisons
             """)
-            
-        st.markdown("### 🤔 Critical Thinking Questions")
         
-        questions = [
-            "How does environmental impact method change perception of system performance?",
-            "What are the key impact drivers for each system?",
-            "How do results inform design priorities for improving sustainability?",
-            "Which factors might vary by geographic location?"
-        ]
-        
-        for i, question in enumerate(questions, 1):
-            with st.expander(f"Question {i}: {question}", expanded=False):
-                user_response = st.text_area(f"Your thoughts on Question {i}:", 
-                                           key=f"question_{i}",
-                                           placeholder="Share your analysis here...")
-                if user_response:
-                    st.write("💭 Great thinking! Discuss with your classmates.")
 
-    # System boundary image
-    with col2:
-        st.image("img/placeholder.png", caption="System boundaries visualization")
-        
+    with col2:        
         # Add system comparison table
         st.markdown("#### ⚖️ System Comparison")
         
@@ -128,6 +111,22 @@ def show():
                 for con in details["cons"]:
                     st.write(f"• {con}")
 
+
+    # Add system boundaries
+    st.subheader("🏗️ System Boundary Schematics")
+    st.write('''Here's schematics to give a picture of what equipment
+                 and assumptions are included in the scope. The charging of
+                 both the BESS and sand battery are assumed "free" from renewable
+                 sources, while the propane comes at a cost.
+                 The systems are sized and designed to deliver the same functional unit.''')
+    col3a, col3b, col3c = st.columns(3)
+    with col3a:
+        st.image("img/bess.png", caption="BESS")
+    with col3b:
+        st.image("img/propane.png", caption="Propane")
+    with col3c:
+        st.image("img/sand.png", caption="Sand Battery")
+
     # Enhanced acknowledgements with interactive elements
     st.subheader("🙏 Acknowledgements & Resources", divider=True)
     
@@ -168,3 +167,5 @@ def show():
                 st.success("Thank you for your feedback! 🎉")
                 if rating >= 4:
                     st.balloons()
+
+# Save feedback to a file
