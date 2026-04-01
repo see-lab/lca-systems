@@ -122,7 +122,9 @@ def show():
     else:
         bar_mode = "stack"
 
-    # Plotly charts (GWP, midpoints, and endpoints)
+    ######## Plotly charts (GWP, midpoints, and endpoints)
+    
+    ### CARBON FOOTPRINT RESULTS
     if impact_category == "Carbon Footprint":
         fig = px.bar(df, x='System', y=phases, barmode=bar_mode,
                      title="🌍 Carbon Footprint Comparison",
@@ -166,54 +168,166 @@ def show():
             st.metric("🔍 Key Phase", dominant_phase,
                      f"{(phase_totals[dominant_phase]/phase_totals.sum()*100):.0f}% of total")
 
+    ### RECIPE ENDPOINT RESULTS
     elif impact_category == "ReCiPe Endpoint H":
         # Plot single score results
         fig1 = px.bar(df_endpoint, x='System', y=phases, barmode=bar_mode,
-                     title="Comparison of Systems (single score)")
+                     title="🎯 ReCiPe Endpoint Comparison (Single Score)",
+                     color_discrete_sequence=px.colors.qualitative.Set2)
+        fig1.update_layout(
+            yaxis_title=units, 
+            legend_title="Lifecycle Phases",
+            font=dict(family="Arial", size=14, color="black"),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)'
+        )
+        fig1.update_traces(
+            hovertemplate="<b>%{x}</b><br>" +
+                         "Phase: %{fullData.name}<br>" +
+                         "Impact: %{y:.2f} " + units + "<br>" +
+                         "<extra></extra>"
+        )
         
         # Plot midpoint results for each system
         fig2 = px.bar(df[df['System'] == 'Sand Battery'], 
                       x='Midpoint', y=phases, barmode=bar_mode,
-                      title="Sand Battery (endpoint breakdown by midpoint categories)")
+                      title="🏖️ Sand Battery (Breakdown by Impact Categories)",
+                      color_discrete_sequence=px.colors.qualitative.Set2)
+        fig2.update_layout(
+            yaxis_title=units, 
+            legend_title="Lifecycle Phases",
+            font=dict(family="Arial", size=14, color="black"),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)'
+        )
+        fig2.update_traces(
+            hovertemplate="<b>%{x}</b><br>" +
+                         "Phase: %{fullData.name}<br>" +
+                         "Impact: %{y:.2f} " + units + "<br>" +
+                         "<extra></extra>"
+        )
+        fig2.update_xaxes(tickangle=45)
+        
         fig3 = px.bar(df[df['System'] == 'BESS'], 
                       x='Midpoint', y=phases, barmode=bar_mode, 
-                      title="BESS (endpoint breakdown by midpoint categories)")
+                      title="🔋 BESS (Breakdown by Impact Categories)",
+                      color_discrete_sequence=px.colors.qualitative.Set2)
+        fig3.update_layout(
+            yaxis_title=units, 
+            legend_title="Lifecycle Phases",
+            font=dict(family="Arial", size=14, color="black"),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)'
+        )
+        fig3.update_traces(
+            hovertemplate="<b>%{x}</b><br>" +
+                         "Phase: %{fullData.name}<br>" +
+                         "Impact: %{y:.2f} " + units + "<br>" +
+                         "<extra></extra>"
+        )
+        fig3.update_xaxes(tickangle=45)
+        
         fig4 = px.bar(df[df['System'] == 'Propane'], 
                       x='Midpoint', y=phases, barmode=bar_mode,
-                      title="Propane (endpoint breakdown by midpoint categories)")
-        # Update layout for both charts
-        fig1.update_layout(yaxis_title=units, legend_title=None)
-        fig1.update_layout(font=dict(family="Arial", size=26, color="black"))
-        fig2.update_layout(yaxis_title=units, legend_title=None)
-        fig2.update_layout(font=dict(family="Arial", size=26, color="black"))
-        fig3.update_layout(yaxis_title=units, legend_title=None)
-        fig3.update_layout(font=dict(family="Arial", size=26, color="black"))
-        fig4.update_layout(yaxis_title=units, legend_title=None)
-        fig4.update_layout(font=dict(family="Arial", size=26, color="black"))
+                      title="🔥 Propane (Breakdown by Impact Categories)",
+                      color_discrete_sequence=px.colors.qualitative.Set2)
+        fig4.update_layout(
+            yaxis_title=units, 
+            legend_title="Lifecycle Phases",
+            font=dict(family="Arial", size=14, color="black"),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)'
+        )
+        fig4.update_traces(
+            hovertemplate="<b>%{x}</b><br>" +
+                         "Phase: %{fullData.name}<br>" +
+                         "Impact: %{y:.2f} " + units + "<br>" +
+                         "<extra></extra>"
+        )
+        fig4.update_xaxes(tickangle=45)
 
         # Display vertically
-        col2.plotly_chart(fig1)
+        col2.plotly_chart(fig1, use_container_width=True)
+        
+        # Add quick insights below main chart
+        col2_1, col2_2, col2_3 = col2.columns(3)
+        
+        # Calculate which system is best for endpoint
+        total_impacts = df_endpoint.groupby('System')[phases].sum().sum(axis=1)
+        best_system = total_impacts.idxmin()
+        worst_system = total_impacts.idxmax()
+        
+        with col2_1:
+            st.metric("🏆 Best System", best_system, 
+                     f"{total_impacts[best_system]:.0f} {units}")
+        with col2_2:
+            st.metric("📈 Highest Impact", worst_system,
+                     f"{total_impacts[worst_system]:.0f} {units}")
+        with col2_3:
+            # Calculate dominant phase for endpoint
+            phase_totals = df_endpoint[phases].sum()
+            dominant_phase = phase_totals.idxmax()
+            st.metric("🔍 Key Phase", dominant_phase,
+                     f"{(phase_totals[dominant_phase]/phase_totals.sum()*100):.0f}% of total")
+        
         col2.divider() # Divider for better visual separation
-        col2.plotly_chart(fig2)
-        col2.plotly_chart(fig3)
-        col2.plotly_chart(fig4)
+        col2.plotly_chart(fig2, use_container_width=True)
+        col2.plotly_chart(fig3, use_container_width=True)
+        col2.plotly_chart(fig4, use_container_width=True)
+
+    ### RECIPE MIDPOINT RESULTS
     else:
         # Select a midpoint category
         with col2:
-            midpoint_category = st.selectbox("Select a midpoint category to display:", midpoints, index=0)
+            midpoint_category = st.selectbox("🔍 Select a midpoint category to display:", midpoints, index=0,
+                                           help="Each midpoint represents a specific environmental impact type")
 
         # Filter the data to only show bar charts for the selected midpoint category
         df_midpoint = df[df['Midpoint'] == midpoint_category]
         # Set units based on the selection
-        units = df_midpoint['Unit'].iloc[0]
+        units_midpoint = df_midpoint['Unit'].iloc[0] if not relative_results else "%"
+        
         # Plot bar charts for all three systems for the selected midpoint category
         fig = px.bar(df_midpoint, x='System', y=phases, barmode=bar_mode,
-                     title="Comparison of Systems")
-        fig.update_layout(yaxis_title= "%" if relative_results else units, legend_title=None)
-        fig.update_layout(font=dict(family="Arial", size=26, color="black"))
+                     title=f"🔬 {midpoint_category} Comparison",
+                     color_discrete_sequence=px.colors.qualitative.Set2)
+        fig.update_layout(
+            yaxis_title=units_midpoint, 
+            legend_title="Lifecycle Phases",
+            font=dict(family="Arial", size=14, color="black"),
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)'
+        )
+        fig.update_traces(
+            hovertemplate="<b>%{x}</b><br>" +
+                         "Phase: %{fullData.name}<br>" +
+                         "Impact: %{y:.2f} " + units_midpoint + "<br>" +
+                         "<extra></extra>"
+        )
 
         # Display chart
-        col2.plotly_chart(fig)
+        col2.plotly_chart(fig, use_container_width=True)
+        
+        # Add quick insights below chart for midpoint
+        col2_1, col2_2, col2_3 = col2.columns(3)
+        
+        # Calculate which system is best for this midpoint
+        total_impacts = df_midpoint.groupby('System')[phases].sum().sum(axis=1)
+        best_system = total_impacts.idxmin()
+        worst_system = total_impacts.idxmax()
+        
+        with col2_1:
+            st.metric("🏆 Best System", best_system, 
+                     f"{total_impacts[best_system]:.2f} {units_midpoint}")
+        with col2_2:
+            st.metric("📈 Highest Impact", worst_system,
+                     f"{total_impacts[worst_system]:.2f} {units_midpoint}")
+        with col2_3:
+            # Calculate dominant phase for this midpoint
+            phase_totals = df_midpoint[phases].sum()
+            dominant_phase = phase_totals.idxmax()
+            st.metric("🔍 Key Phase", dominant_phase,
+                     f"{(phase_totals[dominant_phase]/phase_totals.sum()*100):.0f}% of total")
         # st.divider() # Divider for better visual separation
         # Add all data for each system as a table
         # col2.subheader(f"Data for all midpoints and all systems")
