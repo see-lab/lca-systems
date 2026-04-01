@@ -4,6 +4,7 @@ __pycache__/
 venv/
 staging/
 supporting-docs/
+feedback/
 
 # Other files
 .DS_Store

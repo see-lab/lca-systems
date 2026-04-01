@@ -12,9 +12,10 @@ def show():
     with col1:
         st.markdown("### 🎯 Problem Set Up")
         st.markdown('''This module focuses on the life cycle assessment of residential 
-                    storage systems, particularly for resilient heating solutions.
-                    The goal is to compare three alternative storage technologies: (1) battery energy storage system (BESS), 
-                    (2) a thermal storage system (silica sand, i.e., a "sand battery").
+                    energy storage systems, particularly for resilient heating solutions.
+                    The goal is to compare three alternative storage technologies -- (1) battery energy storage system (BESS), 
+                    (2) a thermal storage system (silica sand, i.e., a "sand battery"), and (3) a propane-based system -- 
+                    from a environmental perspective.
                     ''')
         
         st.markdown("### ⚠️ Disclaimer!")
@@ -133,11 +134,16 @@ def show():
     col_ack1, col_ack2 = st.columns([2, 1])
     
     with col_ack1:
-        st.write('''The development of this educational module was supported by the U.S. 
+        st.write('''**Funding:** The development of this educational module was supported by the U.S. 
                 National Science Foundation under Grant CBET-2501735. Any opinions, 
                 findings, and conclusions or recommendations expressed in this material 
                 are those of the authors and do not necessarily reflect the views of the 
                 National Science Foundation.''')
+        
+        st.write('''**AI Statement:** The design of this interactive educational module 
+                was enhanced with assistance from AI tools (Claude Sonnet 4) for code development, user interface design, 
+                and documentation. All educational content, data analysis, and LCA processes were
+                conceptualized, performed, and validated by the human authors.''')
         
         # Add learning resources
         st.markdown("#### 📚 Additional Learning Resources")
@@ -164,8 +170,28 @@ def show():
             submitted = st.form_submit_button("Submit Feedback")
             
             if submitted:
-                st.success("Thank you for your feedback! 🎉")
+                # Save feedback to a file
+                import datetime
+                import os
+                
+                # Create feedback directory if it doesn't exist
+                feedback_dir = "feedback"
+                if not os.path.exists(feedback_dir):
+                    os.makedirs(feedback_dir)
+                
+                # Create feedback entry with timestamp
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                feedback_entry = f"Timestamp: {timestamp}\nRating: {rating}/5\nFeedback: {feedback}\n{'='*50}\n\n"
+                
+                # Append to feedback file
+                feedback_file = os.path.join(feedback_dir, "user_feedback.txt")
+                try:
+                    with open(feedback_file, "a", encoding="utf-8") as f:
+                        f.write(feedback_entry)
+                    st.success("Thank you for your feedback! 🎉 Your response has been saved.")
+                except Exception as e:
+                    st.success("Thank you for your feedback! 🎉")
+                    st.error(f"Note: Could not save to file ({str(e)})")
+                
                 if rating >= 4:
                     st.balloons()
-
-# Save feedback to a file
