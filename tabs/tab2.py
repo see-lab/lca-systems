@@ -151,7 +151,7 @@ def show():
         resources = [
             ("📖 ISO 14040 LCA Principles", "https://www.iso.org/standard/37456.html"),
             ("📊 ReCiPe Methodology", "https://www.rivm.nl/en/life-cycle-assessment-lca/recipe"),
-            ("📊 IPCC GWP Methodology", "https://www.ipcc.ch/report/ar6/wg3/"),
+            ("🌐 IPCC GWP Methodology", "https://www.ipcc.ch/report/ar6/wg3/"),
             ("🎓 LCA Resources", "https://venturewell.org/tools_for_design/measuring-sustainability/life-cycle-assessment-content/"),
             ("⚡ Energy Storage Technologies", "https://eta.lbl.gov/storage"),
             ("🏖 Sand Batteries in Action", "https://polarnightenergy.com/news/what-is-thermal-energy-storage/")
